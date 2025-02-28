@@ -1,0 +1,925 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Banner Desing */
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url("https://t3.ftcdn.net/jpg/09/52/78/68/360_F_952786811_oAEGJctfVOHBQy4KJE9v8xDcSn7ZoDWX.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    cursor: default;
+    margin-bottom: 100px;
+}
+.banner .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(36, 14, 0, 0.516);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.banner .overlay p{
+    text-align: center;
+    font-family: "Pacifico", serif;
+    color: #fffcf3;
+    font-size: 100px;
+    cursor: default;
+}
+.banner .overlay .text{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    color: #fadcc3;
+    font-family: "Caveat", serif;
+    font-size: 24px;  
+    font-weight: 700;
+}
+.banner .overlay .text a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fffcf3;
+    transition: color ease 0.2s;
+}
+.banner .overlay .text a:hover{
+    color: #ffb97c;
+}
+.banner .overlay .text i{
+    font-size: 14px; 
+    margin-left: 5px; 
+    color: #fffcf3;
+}
+
+
+/* Info Desing */
+.info{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+.info .info-all{
+    width: 49%;
+    height: auto;
+}
+.info .info-left{
+    display: flex;
+    justify-content: space-between;
+}
+.info .info-left .side-all{
+    width: 49%;
+    height: auto;
+}
+.info .info-left .side-left{
+    object-fit: cover;
+    border-radius: 20px;
+}
+.info .info-left .side-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 13px;
+}
+.info .info-left .side-right img{
+    object-fit: cover;
+    border-radius: 20px;
+    height: 100%;
+}
+.info .info-left .side-right .exp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: black;    
+    padding: 8px;
+    color: #fffcf3;
+    cursor: default;
+    gap: 5px;
+}
+.info .info-left .side-right .exp .year{
+    text-align: center;
+    font-size: 54px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 3px;
+    font-weight: 600;
+}
+.info .info-left .side-right .exp .year i{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.info .info-left .side-right .exp span{
+    font-family: "Pacifico", serif;
+    font-size: 20px;  
+    width: 100%;
+    text-align: center;
+}
+.info .info-right{
+    background-color: #fde3d6;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+}
+.info .info-right .info-title{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: default;
+}
+.info .info-right .info-title p{
+    font-family: "Caveat", serif;
+    font-size: 24px;  
+    font-weight: 700;
+    color:  #dc7a25;
+}
+.info .info-right .info-title h1{
+    font-family: "Pacifico", serif;
+    font-size: 42px;
+    line-height: 32px;
+}
+.info .info-right .info-text{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.info .info-right .info-text p{
+    font-size: 15px;
+    font-style: italic;
+}
+.info .info-right button{
+    border: #ba704a;
+    border-radius: 4px;
+    background-color: #ba704a;
+    color: #fff;
+    width: 116px;
+    height: 38px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: "Caveat", serif;
+    font-weight: 700;
+    font-size: 18px; 
+}
+.info .info-right button:hover{
+    border: #6e391f;
+    background-color: #6e391f;
+}
+
+
+/* Ourview Desing */
+.ourview{
+    background-color: #ba704a;
+    margin: 120px 0;
+    padding: 100px 0;
+    border-radius: 40px;
+}
+.ourview .container{
+    display: flex;
+    justify-content: space-between;;
+    height: auto;
+}
+.ourview .container .view-contents{
+    width: 49%;
+    gap: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ourview .container .view-contents .content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    cursor: default;
+    padding: 28px 36px;
+    background-color: #fadcc3;
+    gap: 14px;
+    border-radius: 20px;
+    transition: all ease 0.2s;
+}
+.ourview .container .view-contents .content p{
+    font-family: "Pacifico", serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 16px;
+    border-radius: 20px;
+    background-color: #fffcf3;
+    color: #dc7a25;
+}
+.ourview .container .view-contents .content span{
+    font-size: 14px;
+    font-style: italic;
+    width: 95%;
+}
+.ourview .container img{
+    width: 49%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.ourview .container .view-contents .content:hover{
+    transform: scale(1.03); 
+    background-color: #fffcf3;
+}
+.ourview .container .view-contents .content:hover p{
+    font-size: 28px;
+    padding: 0;
+    margin: auto;
+}
+.ourview .container .view-contents .content:hover span{
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* Advantages Desing */
+.advantages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.advantages h1{
+    cursor: default;
+    text-align: center;
+    font-family: "Pacifico", serif;
+    color: #6e391f;
+    font-size: 42px;
+    width: 100%;
+    padding: 12px;
+    background-color: #ffb97c58;
+    border-radius: 20px;
+}
+.advantages .adv-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 8px;
+    width: 100%;
+}
+.advantages .adv-cards .card{
+    border-radius: 20px;
+    background-color: transparent;
+    perspective: 1000px;
+    height: 200px;
+}
+.advantages .adv-cards .card .card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.advantages .adv-cards .card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+.advantages .adv-cards .card .card-inner .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+.advantages .adv-cards .card .card-inner .front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #ba6c46;
+    color: #fffcf3;
+    font-family: "Pacifico", serif;
+    font-size: 16px;
+    cursor: default;
+}
+.advantages .adv-cards .card .card-inner .front i{
+    font-size: 60px;
+}
+.advantages .adv-cards .card .card-inner .back{
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #fadcc3;
+}
+.advantages .adv-cards .card .card-inner .back p{   
+    font-family: "Pacifico", serif;
+    font-size: 24px;
+    cursor: default;
+    color: #dc7a25;
+}
+.advantages .adv-cards .card .card-inner .back span{
+    width: 90%;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    color: black;
+    
+}
+.advantages .statistic{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    background-color: #ffb97c58;
+    border-radius: 20px;
+    cursor: default;
+}
+.advantages .statistic .stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    padding: 20px 0;
+    gap: 10px;
+}
+.advantages .statistic .stat h2{
+    text-align: center;
+    font-family: "Pacifico", serif;
+    color: #6e391f;
+    font-size: 42px;
+    line-height: 42px;
+}
+.advantages .statistic .stat p{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+
+/* Partner Desing */
+.shops {
+    height: 24vh;
+    display: flex;
+    gap: 10px;
+    animation: scroll-right 25s linear infinite;
+    padding: 10px;
+    margin: 120px 0px 80px;
+}
+.shops a{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; 
+    padding: 5px;
+}
+.shops img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #e9ecef;
+}
+.shops-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.shops:hover{
+    animation-play-state: paused; 
+}
+.shops a:hover {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px #7A4225;
+}
+@keyframes scroll-right {
+    from {
+        transform: translateX(5%); 
+    }
+    to {
+        transform: translateX(-170%); 
+    }
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 600px){  
+    .banner{
+        height: 380px;
+        margin-bottom: 80px;
+    }
+    .banner .overlay{
+        gap: 3px;
+    }
+    .banner .overlay p{
+        font-size: 76px;
+    }
+    .banner .overlay .text{
+        font-size: 21px;  
+    }
+    .banner .overlay .text i{
+        font-size: 10px; 
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 25px;
+        height: auto;
+    }
+    .info .info-all{
+        width: 100%;
+        height: auto;
+    }
+    .info .info-left{
+        display: flex;
+        justify-content: space-between;
+        height: 360px;
+    }
+    .info .info-right{
+        background-color: #fde3d6;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 32px 36px;
+    }
+    .info .info-right .info-title{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 5px;
+        cursor: default;
+    }
+    .info .info-right .info-title p{
+        font-size: 20px;  
+    }
+    .info .info-right .info-title h1{
+        font-size: 34px;
+        line-height: 22px;
+    }
+    .info .info-right .info-text{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .info .info-right .info-text p{
+        text-align: center;
+        font-size: 13px;
+    }
+    .info .info-right button{
+        width: 100px;
+        height: 34px;
+        font-size: 16px; 
+    }
+
+    .ourview{
+        margin: 80px 0;
+        padding: 60px 0;
+        border-radius: 50px;
+    }
+    .ourview .container{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 25px;
+        height: auto;
+    }
+    .ourview .container .view-contents{
+        width: 100%;
+        gap: 14px;
+        margin: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .ourview .container .view-contents .content{
+        align-items: center;
+        padding: 22px 26px;
+        gap: 12px;
+        border-radius: 20px;
+    }
+    .ourview .container .view-contents .content p{
+        font-size: 18px;
+        padding: 4px 12px;
+        border-radius: 18px;
+    }
+    .ourview .container .view-contents .content span{
+        font-size: 12px;
+        font-style: italic;
+        text-align: center;
+        width: 98%;
+    }
+    .ourview .container img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .ourview .container .view-contents .content:hover{
+        transform: none; 
+        background-color: #fffcf3;
+    }
+    .ourview .container .view-contents .content:hover p{
+        font-size: 18px;
+        padding: 4px 12px;
+        border-radius: 18px;
+    }
+    .ourview .container .view-contents .content:hover span{
+        font-size: 12px;
+        text-align: center;
+        width: 98%;
+    }
+
+    .advantages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .advantages h1{
+        font-size: 28px;
+        padding: 10px;
+    }
+    .advantages .adv-cards{
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 8px;
+        width: 100%;
+    }
+    .advantages .adv-cards .card{
+        border-radius: 20px;
+        background-color: transparent;
+        perspective: 1000px;
+        height: 150px;
+    }
+    .advantages .adv-cards .card .card-inner .front{
+        gap: 20px;
+        font-size: 12px;
+    }
+    .advantages .adv-cards .card .card-inner .front i{
+        font-size: 48px;
+    }
+    .advantages .adv-cards .card .card-inner .back{
+        padding: 5px;
+        gap: 10px;
+    }
+    .advantages .adv-cards .card .card-inner .back p{   
+        font-size: 16px;
+    }
+    .advantages .adv-cards .card .card-inner .back span{
+        width: 60%;
+        font-size: 12px;   
+    }
+    .advantages .statistic{
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+    .advantages .statistic .stat{
+        align-items: center;
+        padding: 20px 0;
+        gap: 10px;
+    }
+    .advantages .statistic .stat h2{
+        font-size: 38px;
+        line-height: 30px;
+    }
+    .advantages .statistic .stat p{
+        font-size: 12px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .shops {
+        height: 24vh;
+        gap: 10px;
+        padding: 10px;
+        margin: 40px 0px;
+    }
+    .shops a{
+        width: 120px;
+        height: 120px;
+    }
+    .shops img{
+        width: 100px;
+        height: 100px;
+    }
+    .shops a:hover {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+    .banner{
+        margin-bottom: 80px;
+    }
+    .banner .overlay{
+        gap: 3px;
+    }
+    .banner .overlay p{
+        font-size: 86px;
+    }
+    .banner .overlay .text{
+        font-size: 21px;  
+    }
+    .banner .overlay .text i{
+        font-size: 10px; 
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 25px;
+        height: auto;
+    }
+    .info .info-all{
+        width: 100%;
+        height: auto;
+    }
+    .info .info-left{
+        display: flex;
+        justify-content: space-between;
+        height: 360px;
+    }
+    .info .info-right{
+        background-color: #fde3d6;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 32px 36px;
+    }
+    .info .info-right .info-title{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 5px;
+        cursor: default;
+    }
+    .info .info-right .info-title p{
+        font-size: 24px;  
+    }
+    .info .info-right .info-title h1{
+        font-size: 36px;
+        line-height: 26px;
+    }
+    .info .info-right .info-text{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .info .info-right .info-text p{
+        text-align: center;
+        font-size: 14px;
+        width: 94%;
+        margin: auto;
+    }
+    .info .info-right button{
+        width: 100px;
+        height: 34px;
+        font-size: 16px; 
+    }
+
+    .ourview{
+        margin: 80px 0;
+        padding: 60px 0;
+        border-radius: 50px;
+    }
+    .ourview .container{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 25px;
+        height: auto;
+    }
+    .ourview .container .view-contents{
+        width: 100%;
+        gap: 14px;
+        margin: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .ourview .container .view-contents .content{
+        align-items: center;
+        padding: 22px 26px;
+        gap: 12px;
+        border-radius: 20px;
+    }
+    .ourview .container .view-contents .content p{
+        font-size: 20px;
+        padding: 4px 14px;
+        border-radius: 18px;
+    }
+    .ourview .container .view-contents .content span{
+        font-size: 14px;
+        font-style: italic;
+        text-align: center;
+        width: 84%;
+    }
+    .ourview .container img{
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .ourview .container .view-contents .content:hover{
+        transform: none; 
+        background-color: #fffcf3;
+    }
+    .ourview .container .view-contents .content:hover p{
+        font-size: 20px;
+        padding: 4px 14px;
+        border-radius: 18px;
+    }
+    .ourview .container .view-contents .content:hover span{
+        font-size: 14px;
+        text-align: center;
+        width: 84%;
+    }
+
+    .advantages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .advantages h1{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .advantages .adv-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 8px;
+        width: 100%;
+    }
+    .advantages .adv-cards .card{
+        border-radius: 20px;
+        background-color: transparent;
+        perspective: 1000px;
+        height: 165px;
+    }
+    .advantages .adv-cards .card .card-inner .front{
+        gap: 20px;
+        font-size: 14px;
+    }
+    .advantages .adv-cards .card .card-inner .front i{
+        font-size: 48px;
+    }
+    .advantages .adv-cards .card .card-inner .back{
+        padding: 5px;
+        gap: 10px;
+    }
+    .advantages .adv-cards .card .card-inner .back p{   
+        font-size: 17px;
+    }
+    .advantages .adv-cards .card .card-inner .back span{
+        width: 60%;
+        font-size: 13px;   
+    }
+    .advantages .statistic{
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 6px;
+    }
+    .advantages .statistic .stat{
+        align-items: center;
+        padding: 30px 0;
+        gap: 10px;
+    }
+    .advantages .statistic .stat h2{
+        font-size: 42px;
+        line-height: 34px;
+    }
+    .advantages .statistic .stat p{
+        font-size: 14px;
+        text-align: center;
+        width: 90%;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px){
+    .banner .overlay p{
+        font-size: 94px;
+    }
+    .banner .overlay .text{
+        font-size: 22px;  
+    }
+    .banner .overlay .text i{
+        font-size: 13px; 
+
+    }
+
+    .info .info-right .info-title p{
+        font-size: 20px;  
+    }
+    .info .info-right .info-title h1{
+        font-size: 36px;
+        line-height: 32px;
+    }
+    .info .info-right .info-text p{
+        font-size: 12px;
+    }
+    .info .info-right button{
+        width: 110px;
+        height: 36px;
+        font-size: 16px; 
+    }
+
+    .ourview{
+        margin: 114px 0;
+        padding: 80px 0;
+        border-radius: 40px;
+    }
+    .ourview .container .view-contents .content{
+        padding: 24px 32px;
+        gap: 12px;
+    }
+    .ourview .container .view-contents .content p{
+        font-size: 22px;
+        padding: 4px 15px;
+    }
+    .ourview .container .view-contents .content span{
+        font-size: 12px;
+        width: 95%;
+    }
+    .ourview .container .view-contents .content:hover{
+        transform: scale(1.03); 
+        background-color: #fffcf3;
+    }
+    .ourview .container .view-contents .content:hover p{
+        font-size: 24px;
+    }
+    .ourview .container .view-contents .content:hover span{
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .advantages{
+        gap: 23px;
+    }
+    .advantages h1{
+        font-size: 36px;
+        padding: 12px;
+    }
+    .advantages .adv-cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 8px;
+        width: 100%;
+    }
+    .advantages .adv-cards .card{
+        height: 180px;
+    }
+    .advantages .adv-cards .card .card-inner .front{
+        gap: 24px;
+        font-size: 14px;
+    }
+    .advantages .adv-cards .card .card-inner .front i{
+        font-size: 55px;
+    }
+    .advantages .adv-cards .card .card-inner .back p{   
+        font-size: 22px;
+    }
+    .advantages .adv-cards .card .card-inner .back span{
+        font-size: 12px;   
+    }
+    .advantages .statistic .stat h2{
+        text-align: center;
+        font-size: 38px;
+        line-height: 40px;
+    }
+    .advantages .statistic .stat p{
+        font-size: 14px;
+        font-weight: 700;
+    }
+}

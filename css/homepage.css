@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/* BG COLORS #f0cd90 #FFE2B0 TEXT COLORS #7A4225*/
+
+
+/* Slider Design */
+.sliderstyle{
+    width: 100%;
+    /* padding-top: 100px; */
+    background-color: #FFE2B0;
+    position: relative;
+}
+.sliderstyle .slides{
+    object-fit: cover;
+    display: inline-block;
+    width: 100%;
+    height: 90vh;
+}
+.sliderstyle .slide-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(36, 14, 0, 0) 0%, #391c0e 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:150px 15% 0;
+}
+.sliderstyle .slide-cover .cover-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 50px;
+}
+.sliderstyle .slide-cover .cover-title h1{
+    font-family: "Pacifico", serif;
+    color: #fff;
+    line-height: 100px;
+    font-size: 120px;
+    cursor: default;
+}
+.sliderstyle .slide-cover .cover-title p{
+    color: #ffffff99;
+    font-family: "Caveat", serif;
+    font-size: 64px; 
+    margin-left: 100px; 
+    font-weight: 900;
+}
+.sliderstyle .slide-cover .cover-description{
+    margin: 0 0 24px 15px;
+    color: #e9ecef;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 700;
+    width: 94%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sliderstyle .slide-cover a{
+    border: #eb7e1f;
+    border-radius: 10px;
+    background-color: #eb7e1f;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: "Caveat", serif;
+    font-weight: 700;
+    font-size: 17px;  
+    text-decoration: none;
+    margin-left: 15px;
+}
+.sliderstyle .slide-cover a:hover{
+    border: #6e391f;
+    background-color: #6e391f;
+    color: #fff;
+}
+
+
+
+/* Product Desing*/
+.product{
+    background-color: #f0cd90;
+    padding: 120px 0;
+}
+.product .container .prod-title{
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: "Pacifico", serif;
+    color: rgb(74, 38, 10);
+    font-size: 34px;
+    cursor: default;
+}
+.product .container .prod-boxs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.product .container .prod-boxs .box{
+    border-radius: 10px;
+    background: rgb(231, 201, 164);
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 5px 10px rgb(181, 95, 28);
+    transition: all 0.2s ease-in-out;
+}
+.product .container .prod-boxs .box-img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+.product .container .prod-boxs h2,h3{
+    text-align: center;
+    font-family: "Pacifico", serif;
+    color: rgb(74, 38, 10);
+    font-size: 28px;
+    cursor: default;
+}
+.product .container .prod-boxs .box p{
+    font-family: "Pacifico", serif;
+    color: black;
+    font-size: 22px;
+    cursor: default;
+}
+.product .container .prod-boxs .detail{
+    border: #ba704a;
+    border-radius: 4px;
+    background-color: #ba704a;
+    color: #f2dcc7;
+    padding: 6px 11px;
+    margin-top: 8px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: "Caveat", serif;
+    font-weight: 700;
+    font-size: 16px;  
+}
+.product .container .prod-boxs .detail:hover{
+    border: #6e391f;
+    background-color: #6e391f;
+    color: #f2dcc7;
+}
+.product .container .prod-boxs .box:hover{
+    box-shadow: 0 5px 10px rgb(98, 56, 24);
+    transform: scale(1.03); 
+}
+
+       
+/* Branch Desing*/
+.branch{
+     background-color: #f0cd90; 
+     padding-bottom: 120px;
+}
+.branch .container .branch-title{
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: "Pacifico", serif;
+    color: rgb(74, 38, 10);
+    font-size: 34px;
+    cursor: default;
+}
+.branch .container .branch-box{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
+    gap: 40px;
+}
+.branch .container .branch-box .boxes {
+    margin: auto;
+    position: relative;
+    width: 250px;
+    height: 200px;
+    background: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+/* .branch .container .branch-box .boxes svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  } */ 
+.branch .container .branch-box .boxes:hover {
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+} 
+.branch .container .branch-box .boxes .card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}  
+.branch .container .branch-box .boxes:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+}  
+.branch .container .branch-box .boxes .card__title {
+    margin: 0;
+    font-family: "Pacifico", serif;
+    color: black;
+    font-size: 24px;
+    cursor: default;
+    line-height: 32px;
+}
+.branch .container .branch-box .boxes .card__title span{
+    font-size: 34px;
+    color: #ba704a;
+}
+.branch .container .branch-box .boxes .card__description {
+    margin: 16px 0 8px;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.branch .container .branch-box .boxes .detail{
+    border: #ba704a;
+    border-radius: 4px;
+    background-color: #ba704a;
+    color: #f7f2ee;
+    padding: 6px 11px;
+    margin-top: 8px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: "Caveat", serif;
+    font-weight: 700;
+    font-size: 14px;  
+}
+.branch .container .branch-box .boxes .detail:hover{
+    border: #6e391f;
+    background-color: #6e391f;
+    color: #ffffff;
+}
+.card:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+}
+  
+
+/* Partner Desing */
+.shops-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.shops {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: max-content;
+    animation: scroll-shops 25s linear infinite;
+}
+
+.shops a {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; 
+    padding: 5px;
+}
+
+.shops img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #e9ecef;
+}
+
+@keyframes scroll-shops {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+.shops:hover{
+    animation-play-state: paused; 
+}
+.shops a:hover {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    transform: scale(1.05); 
+    box-shadow: 0 2px 8px #7A4225;
+}
+
+
+/* Advantages Desing */
+.advantages{
+    background-color: #ffeee6;
+    padding: 90px 0;
+}
+.advantages .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.advantages .container .adv-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    gap: 20px;
+}
+.advantages .container .adv-card i{
+    font-size: 100px;
+    color: #411d15;
+}
+.advantages .container .adv-card p{
+    font-family: "Pacifico", serif;
+    font-size: 16px;
+    color: #411d15;
+    cursor: default;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 600px){
+    .slides{
+        height: 72vh;
+    }
+    .sliderstyle .slide-cover{
+        padding:150px 10% 0;
+    }
+    .sliderstyle .slide-cover .cover-title{
+        margin-bottom: 40px;
+    }
+    .sliderstyle .slide-cover .cover-title h1{
+        line-height: 55px;
+        font-size: 64px;
+    }
+    .sliderstyle .slide-cover .cover-title p{
+        font-size: 32px; 
+        margin-left: 60px; 
+    }
+    .sliderstyle .slide-cover .cover-description{
+        margin: 0 0 24px 15px;
+        font-size: 14px;
+        width: 92%;
+    }
+    .sliderstyle .slide-cover a{
+        width: 90px;
+        height: 36px;
+        font-size: 14px;  
+        margin-left: 15px;
+    }
+
+    .product{
+        padding: 90px 0;
+    }
+    .product .container .prod-title{
+        padding-bottom: 30px;
+        font-size: 32px;
+    }
+    .product .container .prod-boxs{
+        grid-template-columns: 1fr;
+    }
+    .product .container .prod-boxs .box{
+        padding: 20px;
+    }
+
+    .branch{
+         padding-bottom: 90px;
+    }
+    .branch .container .branch-title{
+        padding-bottom: 20px;
+        font-size: 32px;
+    }   
+         
+    .shops {
+        height: 24vh;
+        gap: 10px;
+        padding: 10px;
+        margin: 40px 0px;
+    }
+    .shops a{
+        width: 120px;
+        height: 120px;
+    }
+    .shops img{
+        width: 100px;
+        height: 100px;
+    }
+    .shops a:hover {
+        width: 140px;
+        height: 140px;
+    }
+
+    .advantages{
+        padding: 70px 0 30px 0;
+    }
+    .advantages .container .adv-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 48%;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .advantages .container .adv-card i{
+        font-size: 70px;
+    }
+    .advantages .container .adv-card p{
+        font-size: 12px;
+    }
+
+}
+@media (min-width: 600px) and (max-width: 900px){
+    .sliderstyle .slide-cover{
+        padding:165px 10% 0;
+    }
+    .sliderstyle .slide-cover .cover-title{
+        margin-bottom: 40px;
+    }
+    .sliderstyle .slide-cover .cover-title h1{
+        line-height: 65px;
+        font-size: 74px;
+    }
+    .sliderstyle .slide-cover .cover-title p{
+        font-size: 36px; 
+        margin-left: 60px; 
+    }
+    .sliderstyle .slide-cover .cover-description{
+        margin: 0 0 24px 15px;
+        font-size: 14px;
+        width: 92%;
+    }
+    .sliderstyle .slide-cover a{
+        width: 98px;
+        height: 38px;
+        font-size: 15px;  
+        margin-left: 15px;
+    }
+    
+    .product .container .prod-boxs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .advantages{
+        padding: 70px 0 30px 0;
+    }
+    .advantages .container .adv-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 48%;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .advantages .container .adv-card i{
+        font-size: 86px;
+    }
+    .advantages .container .adv-card p{
+        font-size: 14px;
+    }
+}
+@media (min-width: 900px) and (max-width: 1200px){
+    .sliderstyle .slide-cover .cover-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin-bottom: 48px;
+    }
+    .sliderstyle .slide-cover .cover-title h1{
+        line-height: 84px;
+        font-size: 102px;
+    }
+    .sliderstyle .slide-cover .cover-title p{
+        font-size: 60px; 
+        margin-left: 100px; 
+        font-weight: 900;
+    }
+    
+    
+    .product .container .prod-boxs{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .advantages{
+        padding: 70px 0;
+    }
+    .advantages .container .adv-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 24%;
+        gap: 20px;
+    }
+    .advantages .container .adv-card i{
+        font-size: 86px;
+    }
+    .advantages .container .adv-card p{
+        font-size: 14px;
+    }
+}

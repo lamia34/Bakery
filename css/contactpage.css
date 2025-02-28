@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Banner Desing */
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url("https://www.softil.com/wp-content/uploads/2017/07/contact-banner.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    cursor: default;
+    margin-bottom: 120px;
+}
+.banner .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(36, 14, 0, 0.516);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.banner .overlay p{
+    text-align: center;
+    font-family: "Pacifico", serif;
+    color: #fffcf3;
+    font-size: 100px;
+    cursor: default;
+}
+.banner .overlay .text{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    color: #fadcc3;
+    font-family: "Caveat", serif;
+    font-size: 24px;  
+    font-weight: 700;
+}
+.banner .overlay .text a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fffcf3;
+    transition: color ease 0.2s;
+}
+.banner .overlay .text a:hover{
+    color: #ffb97c;
+}
+.banner .overlay .text i{
+    font-size: 14px; 
+    margin-left: 5px; 
+    color: #fffcf3;
+}
+
+/* Contact Desing */
+.contact{
+    border-radius: 10px;
+    display: flex;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.contact .contact-all{
+    width: 50%;
+    height: auto;
+}
+.contact .contact-infos{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+    gap: 60px;
+}
+.contact .contact-infos .info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact .contact-infos .info .info-title{
+    display: flex;
+    align-items: end;
+    gap: 17px;
+}
+.contact .contact-infos .info .info-title i{
+    font-size: 26px;
+    color: #dc7a25;
+}
+.contact .contact-infos .info .info-title h3{
+    font-family: "Pacifico", serif;
+    font-size: 26px;
+    line-height: 24px;
+    text-transform: capitalize;
+    cursor: default;
+    color: #4a260a;
+}
+.contact .contact-infos .info p{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-style: italic;
+    gap: 6px;
+}
+.contact .contact-infos .social{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 15px;
+}
+.contact .contact-infos .social h3{
+    font-family: "Pacifico", serif;
+    font-size: 26px;
+    line-height: 24px;
+    text-transform: capitalize;
+    cursor: default;
+    color: #4a260a;
+}
+.contact .contact-infos .social ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+}
+.contact .contact-infos .social ul li a{
+    color: #fc8823;
+    font-size: 34px;
+    transition: all ease-in-out 0.2s;
+}
+.contact .contact-infos .social ul li a:hover{
+    color: rgb(74, 38, 10);
+}
+.contact .contact-forms{
+    background-color: #ffedde;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:40px;
+    gap: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.contact .contact-forms h1{
+    font-family: "Pacifico", serif;
+    font-size: 46px;
+    line-height: 30px;
+    text-align: center;
+    cursor: default;
+}
+.contact .contact-forms h1 span{
+    font-family: "Caveat", serif;
+    font-size: 40px;  
+    font-weight: 700;
+    color:  #dc7a25;
+}
+.contact .contact-forms form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+.contact .contact-forms form input{
+    height: 46px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact .contact-forms form textarea{
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact .contact-forms form button{
+    border: #eb7e1f;
+    border-radius: 10px;
+    background-color: #eb7e1f;
+    color: #fff;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: "Caveat", serif;
+    font-weight: 700;
+    font-size: 17px;  
+}
+.contact .contact-forms form button:hover{
+    border: #6e391f;
+    background-color: #6e391f;
+    color: #fff;
+}
+
+/* Vacancy Desing */
+.vacancy{
+    margin-top: 120px;
+    padding: 100px 0;
+    background-color: #f0cd90; 
+}
+.vacancy .container{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.vacancy .container h1{
+    text-align: center;
+    font-family: "Pacifico", serif;
+    color: rgb(74, 38, 10);
+    font-size: 38px;
+    cursor: default;
+}
+.vacancy .container .vacancy-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px; 
+    justify-content: center;
+}
+.vacancy .container .vacancy-cards .card {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.vacancy .container .vacancy-cards .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.vacancy .container .vacancy-cards .card:hover img {
+    transform: scale(1.05);
+}
+.vacancy .container .vacancy-cards .texts {
+    padding: 20px 18px;
+    background-color: #ffedde;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.vacancy .container .vacancy-cards .texts span{
+    font-family: "Pacifico", serif;
+    font-size: 16px;
+}
+.vacancy .container .vacancy-cards .texts .job {
+    color: #dc7a25;
+    font-size: 20px;
+}
+.vacancy .container .vacancy-cards .overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.704);
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.875), transparent); */
+    transition: left 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 26px;
+    gap: 14px;
+    color: #fffcf3;
+}
+.vacancy .container .vacancy-cards .overlay h3 {
+   font-family: "Pacifico", serif;
+   font-size: 24px;
+}
+.vacancy .container .vacancy-cards .overlay ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.vacancy .container .vacancy-cards .overlay ul li{
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+}
+.vacancy .container .vacancy-cards .overlay ul li strong{
+    font-weight: 800;
+    font-size: 14px;
+}
+.vacancy .container .vacancy-cards .overlay ul li strong i{
+    font-size: 11px;
+    margin-right: 4px;
+}
+.vacancy .container .vacancy-cards .card:hover .overlay {
+    left: 0; 
+}
+.vacancy .container button{
+    border: #ba704a;
+    border-radius: 4px;
+    background-color: #ba704a;
+    color: #fff;
+    width: 116px;
+    height: 38px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: "Caveat", serif;
+    font-weight: 700;
+    font-size: 18px; 
+    margin: auto;
+}
+.vacancy .container  button:hover{
+    border: #6e391f;
+    background-color: #6e391f;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px){  
+    .banner{
+        height: 380px;
+        margin-bottom: 80px;
+    }
+    .banner .overlay{
+        gap: 3px;
+    }
+    .banner .overlay p{
+        font-size: 70px;
+    }
+    .banner .overlay .text{
+        font-size: 21px;  
+    }
+    .banner .overlay .text i{
+        font-size: 10px; 
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact .contact-all{
+        width: 100%;
+        height: auto;
+    }
+    .contact .contact-infos{
+        padding: 50px 35px;
+        gap: 50px;
+    }
+    .contact .contact-infos .info{
+        gap: 10px;
+    }
+    .contact .contact-infos .info .info-title{
+        gap: 14px;
+    }
+    .contact .contact-infos .info .info-title i{
+        font-size: 23px;
+    }
+    .contact .contact-infos .info .info-title h3{
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .contact .contact-infos .info p{
+        font-size: 14px;
+        gap: 6px;
+    }
+    .contact .contact-infos .social{
+        gap: 14px;
+        padding-top: 10px;
+    }
+    .contact .contact-infos .social h3{
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .contact .contact-infos .social ul{
+        gap: 35px;
+    }
+    .contact .contact-infos .social ul li a{
+        font-size: 30px;
+    }
+    .contact .contact-forms{
+        gap: 28px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .contact .contact-forms h1{
+        font-size: 42px;
+        line-height: 26px;
+    }
+    .contact .contact-forms h1 span{
+        font-size: 28px;  
+        font-weight: 700;
+    }
+    .contact .contact-forms form{
+        gap: 24px;
+    }
+    .contact .contact-forms form input{
+        height: 44px;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .contact .contact-forms form textarea{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .contact .contact-forms form button{
+        font-size: 15px;  
+    }
+
+    .vacancy{
+        margin-top: 80px;
+        padding: 60px 0;
+        background-color: #f0cd90; 
+    }
+    .vacancy .container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .vacancy .container h1{
+        font-size: 34px;
+    }
+    .vacancy .container .vacancy-cards{
+        gap:16px; 
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+    .banner{
+        margin-bottom: 80px;
+    }
+    .banner .overlay{
+        gap: 3px;
+    }
+    .banner .overlay p{
+        font-size: 86px;
+    }
+    .banner .overlay .text{
+        font-size: 21px;  
+    }
+    .banner .overlay .text i{
+        font-size: 10px; 
+    }
+
+    
+    .contact{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact .contact-all{
+        width: 100%;
+        height: auto;
+    }
+    .contact .contact-infos{
+        padding: 50px 35px;
+        gap: 50px;
+    }
+    .contact .contact-infos .info{
+        gap: 10px;
+    }
+    .contact .contact-infos .info .info-title{
+        gap: 14px;
+    }
+    .contact .contact-infos .info .info-title i{
+        font-size: 23px;
+    }
+    .contact .contact-infos .info .info-title h3{
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .contact .contact-infos .info p{
+        font-size: 14px;
+        gap: 6px;
+    }
+    .contact .contact-infos .social{
+        gap: 14px;
+        padding-top: 10px;
+    }
+    .contact .contact-infos .social h3{
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .contact .contact-infos .social ul{
+        gap: 35px;
+    }
+    .contact .contact-infos .social ul li a{
+        font-size: 30px;
+    }
+    .contact .contact-forms{
+        gap: 28px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .contact .contact-forms h1{
+        font-size: 42px;
+        line-height: 26px;
+    }
+    .contact .contact-forms h1 span{
+        font-size: 28px;  
+        font-weight: 700;
+    }
+    .contact .contact-forms form{
+        gap: 24px;
+    }
+    .contact .contact-forms form input{
+        height: 44px;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .contact .contact-forms form textarea{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .contact .contact-forms form button{
+        font-size: 15px;  
+    }
+
+    .vacancy{
+        margin-top: 80px;
+        padding: 60px 0;
+        background-color: #f0cd90; 
+    }
+    .vacancy .container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .vacancy .container h1{
+        font-size: 34px;
+    }
+    .vacancy .container .vacancy-cards{
+        gap:16px; 
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px){
+    .banner .overlay p{
+        font-size: 94px;
+    }
+    .banner .overlay .text{
+        font-size: 22px;  
+    }
+    .banner .overlay .text i{
+        font-size: 13px; 
+    }
+
+    .contact .contact-infos .info .info-title i{
+        font-size: 24px;
+    }
+    .contact .contact-infos .info .info-title h3{
+        font-size: 24px;
+        line-height: 22px;
+    }
+    .contact .contact-infos .info p{
+        font-size: 15px;
+    }
+    .contact .contact-infos .social h3{
+        font-size: 24px;
+        line-height: 22px;
+    }
+    .contact .contact-infos .social ul{
+        gap: 34px;
+    }
+    .contact .contact-infos .social ul li a{
+        font-size: 32px;
+    }
+    .contact .contact-forms h1{
+        font-size: 44px;
+        line-height: 28px;
+    }
+    .contact .contact-forms h1 span{
+        font-size: 38px;  
+    }
+    .contact .contact-forms form button{
+        font-size: 16px;  
+    }
+
+    .vacancy{
+        margin-top: 110px;
+        padding: 90px 0;
+    }
+    .vacancy .container h1{
+        font-size: 36px;
+    }
+    .vacancy .container button{
+        width: 114px;
+        height: 38px;
+        font-weight: 700;
+        font-size: 16px; 
+    }
+}
