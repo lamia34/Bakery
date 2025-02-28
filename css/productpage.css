@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* Banner */
 .banner {
     width: 100%;
@@ -127,46 +132,47 @@
 
 /* Product */
 .prod {
-    padding-top: 10px;
+    padding: 10px 20px;
     background-color: #9b7c56;
     max-width: 80%;
     margin: 0 auto;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-
 .products {
-    margin-top: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 3-4 sütunlu düzən */
     gap: 20px;
-    padding: 50px 200px;
+    padding: 40px 50px;
     justify-content: center;
 }
 
 h2 {
-    text-align: center;
     font-family: "Pacifico", cursive;
     color: #1f1a0f;
     font-size: 50px;
+    margin-bottom: 20px;
     cursor: default;
 }
 
 .card {
     position: relative;
-    width: 200px;
+    width: 100%;
+    max-width: 250px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #f3e1c3;
-    padding: 0.5em;
-    padding-bottom: 3.4em;
+    padding: 1em;
     border-radius: 15px;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .card:hover {
@@ -176,15 +182,14 @@ h2 {
 
 .card::after {
     content: "Ətraflı";
-    padding-top: 1.25em;
-    padding-left: 1.25em;
     position: absolute;
     left: 0;
-    bottom: -60px;
+    bottom: -50px;
     background: #db8a34;
     color: #fff;
     height: 2.5em;
-    width: 90%;
+    width: 100%;
+    text-align: center;
     font-weight: 600;
     text-transform: uppercase;
     opacity: 0;
@@ -200,27 +205,23 @@ h2 {
 
 .card .title {
     font-family: "Poppins", sans-serif;
-    font-size: 1em;
-    position: absolute;
-    left: 0.625em;
-    bottom: 2em;
+    font-size: 1.2em;
+    margin-top: 10px;
     font-weight: 600;
     color: #5e3c23;
 }
 
 .card .price {
     font-family: "Poppins", sans-serif;
-    font-size: 0.9em;
-    position: absolute;
-    left: 0.625em;
-    bottom: 0.625em;
+    font-size: 1em;
     color: #a34a28;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 .productphoto {
-    max-width: 180px;
-    max-height: 180px;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -229,6 +230,23 @@ h2 {
     transform: scale(1.05);
 }
 
+@media screen and (max-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+}
+
+
+/* Səhifələmə */
 .pagination-container {
     display: flex;
     justify-content: center;
@@ -272,36 +290,6 @@ h2 {
 }
 
 
-
-
-
-@media screen and (max-width: 1024px) {
-    .products-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .products-container {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
-        padding: 15px;
-    }
-
-    .product-card {
-        padding: 15px;
-    }
-
-    .product-card h3 {
-        font-size: 18px;
-    }
-
-    .product-card p {
-        font-size: 14px;
-    }
-}
 
 /* Bestseller */
 .bestseller-section {

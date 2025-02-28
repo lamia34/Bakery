@@ -1,3 +1,7 @@
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .slides{
     display: inline-block;
