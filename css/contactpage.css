@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -45,8 +46,8 @@
     align-items: center;
     gap: 10px; 
     color: #fadcc3;
-    font-family: "Caveat", serif;
-    font-size: 24px;  
+    font-family: "Varela Round", sans-serif;
+    font-size: 20px;  
     font-weight: 700;
 }
 .banner .overlay .text a{
@@ -96,8 +97,8 @@
     color: #dc7a25;
 }
 .contact .contact-infos .info .info-title h3{
-    font-family: "Pacifico", serif;
-    font-size: 26px;
+    font-family: "Varela Round", sans-serif;
+    font-size: 28px;
     line-height: 24px;
     text-transform: capitalize;
     cursor: default;
@@ -117,8 +118,8 @@
     padding-top: 15px;
 }
 .contact .contact-infos .social h3{
-    font-family: "Pacifico", serif;
-    font-size: 26px;
+    font-family: "Varela Round", sans-serif;    
+    font-size: 28px;
     line-height: 24px;
     text-transform: capitalize;
     cursor: default;
@@ -149,15 +150,15 @@
     border-bottom-right-radius: 10px;
 }
 .contact .contact-forms h1{
-    font-family: "Pacifico", serif;
+    font-family: "Varela Round", sans-serif;
     font-size: 46px;
     line-height: 30px;
     text-align: center;
     cursor: default;
 }
 .contact .contact-forms h1 span{
-    font-family: "Caveat", serif;
-    font-size: 40px;  
+    font-family: "Varela Round", sans-serif;
+    font-size: 30px;  
     font-weight: 700;
     color:  #dc7a25;
 }
@@ -174,6 +175,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .contact .contact-forms form textarea{
+    resize: vertical;
     padding: 10px;
     font-size: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -186,7 +188,7 @@
     padding: 10px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
-    font-family: "Caveat", serif;
+    font-family: "Varela Round", sans-serif;
     font-weight: 700;
     font-size: 17px;  
 }
@@ -209,7 +211,7 @@
 }
 .vacancy .container h1{
     text-align: center;
-    font-family: "Pacifico", serif;
+    font-family: "Varela Round", sans-serif;
     color: rgb(74, 38, 10);
     font-size: 38px;
     cursor: default;
@@ -246,12 +248,14 @@
     justify-content: space-between;
 }
 .vacancy .container .vacancy-cards .texts span{
-    font-family: "Pacifico", serif;
+    font-family: "Varela Round", sans-serif;
     font-size: 16px;
+    font-weight: bold;
 }
 .vacancy .container .vacancy-cards .texts .job {
     color: #dc7a25;
     font-size: 20px;
+    font-weight: bold;
 }
 .vacancy .container .vacancy-cards .overlay {
     position: absolute;
@@ -269,8 +273,9 @@
     color: #fffcf3;
 }
 .vacancy .container .vacancy-cards .overlay h3 {
-   font-family: "Pacifico", serif;
-   font-size: 24px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+   font-size: 26px;
 }
 .vacancy .container .vacancy-cards .overlay ul {
     list-style: none;
@@ -303,7 +308,7 @@
     height: 38px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
-    font-family: "Caveat", serif;
+    font-family: "Varela Round", sans-serif;
     font-weight: 700;
     font-size: 18px; 
     margin: auto;
@@ -584,5 +589,60 @@
         height: 38px;
         font-weight: 700;
         font-size: 16px; 
+    }
+}
+
+@media (max-width: 500px) {
+
+    .contact .social h3{
+        line: height 10px;
+    }
+
+    .contact .contact-all {
+        width: 100%; 
+    }
+
+    .contact .contact-infos,
+    .contact .contact-forms {
+        padding: 20px; 
+        gap: 20px;
+    }
+
+    .contact .contact-infos .info .info-title {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .contact .contact-infos .info .info-title i,
+    .contact .contact-infos .info .info-title h3 {
+        font-size: 20px; 
+    }
+
+    .contact .contact-infos .info p {
+        font-size: 14px; 
+    }
+
+    .contact .contact-infos .social ul {
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 20px; 
+    }
+
+    .contact .contact-infos .social ul li a {
+        font-size: 28px; 
+    }
+
+    .contact .contact-forms h1 {
+        font-size: 32px; 
+        line-height: 28px; 
+    }
+
+    .contact .contact-forms h1 span {
+        font-size: 28px; 
+    }
+
+    .contact .contact-forms form input,
+    .contact .contact-forms form textarea {
+        font-size: 14px; 
     }
 }

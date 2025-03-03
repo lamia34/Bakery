@@ -35,7 +35,7 @@
 }
 .banner .overlay p{
     text-align: center;
-    font-family: "Pacifico", serif;
+    font-family: Pacifico;
     color: #fffcf3;
     font-size: 100px;
     cursor: default;
@@ -45,8 +45,9 @@
     align-items: center;
     gap: 10px; 
     color: #fadcc3;
-    font-family: "Caveat", serif;
-    font-size: 24px;  
+    font-family: "Varela Round", sans-serif;
+    
+    font-size: 20px;  
     font-weight: 700;
 }
 .banner .overlay .text a{
@@ -125,7 +126,7 @@
     font-size: 18px;
 }
 .info .info-left .side-right .exp span{
-    font-family: "Pacifico", serif;
+    font-family: "Varela Round", sans-serif;
     font-size: 20px;  
     width: 100%;
     text-align: center;
@@ -146,13 +147,13 @@
     cursor: default;
 }
 .info .info-right .info-title p{
-    font-family: "Caveat", serif;
+    font-family: "Varela Round", sans-serif;
     font-size: 24px;  
     font-weight: 700;
     color:  #dc7a25;
 }
 .info .info-right .info-title h1{
-    font-family: "Pacifico", serif;
+     font-family: "Varela Round", sans-serif;
     font-size: 42px;
     line-height: 32px;
 }
@@ -216,7 +217,7 @@
     transition: all ease 0.2s;
 }
 .ourview .container .view-contents .content p{
-    font-family: "Pacifico", serif;
+     font-family: "Varela Round", sans-serif;
     font-size: 24px;
     display: flex;
     justify-content: center;
@@ -263,7 +264,7 @@
 .advantages h1{
     cursor: default;
     text-align: center;
-    font-family: "Pacifico", serif;
+     font-family: "Varela Round", sans-serif;
     color: #6e391f;
     font-size: 42px;
     width: 100%;
@@ -310,7 +311,7 @@
     gap: 30px;
     background-color: #ba6c46;
     color: #fffcf3;
-    font-family: "Pacifico", serif;
+     font-family: "Varela Round", sans-serif;
     font-size: 16px;
     cursor: default;
 }
@@ -327,7 +328,7 @@
     background-color: #fadcc3;
 }
 .advantages .adv-cards .card .card-inner .back p{   
-    font-family: "Pacifico", serif;
+     font-family: "Varela Round", sans-serif;
     font-size: 24px;
     cursor: default;
     color: #dc7a25;
@@ -359,7 +360,7 @@
 }
 .advantages .statistic .stat h2{
     text-align: center;
-    font-family: "Pacifico", serif;
+     font-family: "Varela Round", sans-serif;
     color: #6e391f;
     font-size: 42px;
     line-height: 42px;
@@ -434,8 +435,9 @@
         gap: 3px;
     }
     .banner .overlay p{
-        font-size: 76px;
+        font-size: 56px;
     }
+    
     .banner .overlay .text{
         font-size: 21px;  
     }

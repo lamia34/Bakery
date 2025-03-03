@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
@@ -24,8 +25,8 @@ body {
     align-items: center;
     gap: 10px; 
     color: #fadcc3;
-    font-family: "Caveat", serif;
-    font-size: 24px;  
+     font-family: "Varela Round", sans-serif;
+    font-size: 20px;  
     font-weight: 700;
 }
 .banner .text a{
@@ -66,7 +67,7 @@ body {
 .aboutprod {
     flex: 1;
     padding-right: 30px;
-    font-family: "Pacifico", cursive;
+    font-family: "Varela Round", sans-serif;
     color: #8b5e34;
 }
 
@@ -86,6 +87,7 @@ body {
 
 .aboutprod p {
     font-size: 20px;
+    font-weight: bold;
     line-height: 1.7;
     color: #6b3e26;
     margin: 15px 0;
@@ -150,7 +152,7 @@ body {
 }
 
 h2 {
-    font-family: "Pacifico", cursive;
+    font-family: "Varela Round", sans-serif;
     color: #1f1a0f;
     font-size: 50px;
     margin-bottom: 20px;
@@ -173,6 +175,7 @@ h2 {
     border-radius: 15px;
     overflow: hidden;
     margin: 0 auto;
+    
 }
 
 .card:hover {
@@ -182,6 +185,7 @@ h2 {
 
 .card::after {
     content: "Ətraflı";
+    font-family: "Varela Round", sans-serif;
     position: absolute;
     left: 0;
     bottom: -50px;
@@ -204,7 +208,7 @@ h2 {
 }
 
 .card .title {
-    font-family: "Poppins", sans-serif;
+     font-family: "Varela Round", sans-serif;
     font-size: 1.2em;
     margin-top: 10px;
     font-weight: 600;
@@ -212,7 +216,7 @@ h2 {
 }
 
 .card .price {
-    font-family: "Poppins", sans-serif;
+     font-family: "Varela Round", sans-serif;
     font-size: 1em;
     color: #a34a28;
     font-weight: bold;

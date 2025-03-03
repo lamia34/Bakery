@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 *{
     box-sizing: border-box;
@@ -45,7 +46,7 @@
     margin-bottom: 50px;
 }
 .sliderstyle .slide-cover .cover-title h1{
-    font-family: "Pacifico", serif;
+    font-family: Pacifico;
     color: #fff;
     line-height: 100px;
     font-size: 120px;
@@ -101,7 +102,7 @@
 .product .container .prod-title{
     text-align: center;
     padding-bottom: 25px;
-    font-family: "Pacifico", serif;
+    font-family: "Varela Round", sans-serif;
     color: rgb(74, 38, 10);
     font-size: 34px;
     cursor: default;
@@ -126,13 +127,13 @@
 }
 .product .container .prod-boxs h2,h3{
     text-align: center;
-    font-family: "Pacifico", serif;
+    font-family: "Varela Round", sans-serif;
     color: rgb(74, 38, 10);
     font-size: 28px;
     cursor: default;
 }
 .product .container .prod-boxs .box p{
-    font-family: "Pacifico", serif;
+    font-family: "Varela Round", sans-serif;
     color: black;
     font-size: 22px;
     cursor: default;
@@ -169,7 +170,7 @@
 .branch .container .branch-title{
     text-align: center;
     padding-bottom: 25px;
-    font-family: "Pacifico", serif;
+    font-family: "Varela Round", sans-serif;
     color: rgb(74, 38, 10);
     font-size: 34px;
     cursor: default;
@@ -221,7 +222,7 @@
 }  
 .branch .container .branch-box .boxes .card__title {
     margin: 0;
-    font-family: "Pacifico", serif;
+    font-family: "Varela Round", sans-serif;
     color: black;
     font-size: 24px;
     cursor: default;
@@ -341,7 +342,7 @@
     color: #411d15;
 }
 .advantages .container .adv-card p{
-    font-family: "Pacifico", serif;
+    font-family: "Varela Round", sans-serif;
     font-size: 16px;
     color: #411d15;
     cursor: default;
