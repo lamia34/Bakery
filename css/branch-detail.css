@@ -1,0 +1,497 @@
+section{
+    padding-top: 100px;
+    display: flex;
+    gap: 100px;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.information-banner{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.information-banner .banner-left{
+    width: 640px;
+    height: 100%;
+    background-color: #cf6f3e;
+    position: relative;
+}
+.information-banner .banner-left img{
+    position: absolute;
+    object-fit: cover;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    top: 12%;
+    left: 42%;
+}
+/* .information-banner .banner-left h1{
+    position: absolute;
+    font-family: "Sigmar", sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    width: 100%;
+    top: 60px; 
+    left: 14%; 
+    letter-spacing: 20px; 
+    color: #4d1e0730;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.408); 
+} */
+.information-banner .banner-right{
+    width: 100%;
+    height: 100%;
+    background-color: #fff7f0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 60px;
+    padding: 130px 90px 0 0;
+}
+.information-banner .banner-right .banner-title{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-family: "Pacifico", serif;
+    cursor: default;
+    gap: 5px;
+}
+.information-banner .banner-right .banner-title h1{
+    font-size: 100px;
+    line-height: 100px;
+    color: #dc7a25;
+}
+.information-banner .banner-right .banner-title p{
+    width: 80%;
+    font-size: 14px;
+    line-height: 14px;
+    color: #4a260a;
+    text-align: end;
+}
+
+.information-banner .banner-right .banner-text{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 80%;
+    gap: 40px;
+}
+.information-banner .banner-right .banner-text .banner-info{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10%;
+    width: 100%;
+}
+.information-banner .banner-right .banner-text .banner-info span{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    font-size: 16px;
+    font-family: "Varela Round", sans-serif;
+    gap: 5px;
+}
+.information-banner .banner-right .banner-text .banner-info span strong{
+    color: #dc7a25;
+    font-size: 22px;
+    gap: 8px;
+    cursor: default;
+}
+.information-banner .banner-right .banner-text .description{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 14px;
+    font-family: "Varela Round", sans-serif;
+    gap: 5px;
+    text-align: end;
+    width: 86%;
+    
+}
+.information-banner .banner-right .banner-text .description strong{
+    color: #dc7a25;
+    font-size: 22px;
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    cursor: default;
+}
+
+
+@media screen and (max-width: 350px){
+    .information-banner{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 0;
+    }
+    .information-banner .banner-left{
+        display: none;
+    }
+    .information-banner .banner-left img{
+        display: none;
+    }
+    .information-banner .banner-right{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 60px;
+        justify-content: start;
+        align-items: start;
+        padding: 40px 10% 40px 10%;
+    }
+    .information-banner .banner-right .banner-title{
+        gap: 5px;
+        width: 100%;
+        align-items: center;
+    }
+    .information-banner .banner-right .banner-title h1{
+        font-size: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .information-banner .banner-right .banner-title p{
+        width: 100%;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+    }
+    
+    .information-banner .banner-right .banner-text{
+        width: 100%;
+        gap: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .information-banner .banner-right .banner-text .banner-info{
+        gap: 1px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span{
+        text-align: center;
+        font-size: 10px;
+        gap: 4px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span strong{
+        font-size: 12px;
+        gap: 6px;
+    }
+    .information-banner .banner-right .banner-text .description{
+        font-size: 10px;
+        gap: 5px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .information-banner .banner-right .banner-text .description strong{
+        font-size: 12px;
+        gap: 6px;     
+    }
+}
+@media (min-width: 350px) and (max-width: 600px){
+    .information-banner{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 0;
+    }
+    .information-banner .banner-left{
+        width: 100%;
+        height: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .information-banner .banner-left img{
+        position: static;
+        width: 320px;
+        height: 320px;
+    }
+    .information-banner .banner-right{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 60px;
+        justify-content: start;
+        align-items: start;
+        padding: 40px 10% 40px 10%;
+    }
+    .information-banner .banner-right .banner-title{
+        gap: 5px;
+        width: 100%;
+        align-items: center;
+    }
+    .information-banner .banner-right .banner-title h1{
+        font-size: 82px;
+        line-height: 82px;
+        text-align: center;
+    }
+    .information-banner .banner-right .banner-title p{
+        width: 100%;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+    }
+    
+    .information-banner .banner-right .banner-text{
+        width: 100%;
+        gap: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .information-banner .banner-right .banner-text .banner-info{
+        gap: 1px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span{
+        text-align: center;
+        font-size: 12px;
+        gap: 4px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span strong{
+        font-size: 14px;
+        gap: 6px;
+    }
+    .information-banner .banner-right .banner-text .description{
+        font-size: 10px;
+        gap: 5px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .information-banner .banner-right .banner-text .description strong{
+        font-size: 14px;
+        gap: 6px;     
+    }
+}
+@media (min-width: 600px) and (max-width: 900px){
+    .information-banner{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 0;
+    }
+    .information-banner .banner-left{
+        width: 100%;
+        height: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .information-banner .banner-left img{
+        position: static;
+        width: 360px;
+        height: 360px;
+        top: 20%;
+        left: 40%;
+    }
+    .information-banner .banner-right{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 60px;
+        justify-content: start;
+        align-items: start;
+        padding: 60px 10% 80px 10%;
+    }
+    .information-banner .banner-right .banner-title{
+        gap: 5px;
+        width: 100%;
+        align-items: center;
+
+    }
+    .information-banner .banner-right .banner-title h1{
+        font-size: 90px;
+        line-height: 90px;
+        text-align: center;
+    }
+    .information-banner .banner-right .banner-title p{
+        width: 62%;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+    }
+    
+    .information-banner .banner-right .banner-text{
+        width: 100%;
+        gap: 40px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .information-banner .banner-right .banner-text .banner-info{
+        gap: 1px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span{
+        text-align: center;
+        font-size: 14px;
+        gap: 4px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span strong{
+        font-size: 16px;
+        gap: 6px;
+    }
+    .information-banner .banner-right .banner-text .description{
+        font-size: 10px;
+        gap: 5px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .information-banner .banner-right .banner-text .description strong{
+        font-size: 16px;
+        gap: 6px;     
+    }
+}
+@media (min-width: 900px) and (max-width: 1200px){
+    .information-banner .banner-left{
+        width: 480px;
+    }
+    .information-banner .banner-left img{
+        width: 420px;
+        height: 420px;
+        top: 20%;
+        left: 40%;
+    }
+    .information-banner .banner-right{
+        gap: 60px;
+        padding: 130px 50px 0 0;
+    }
+    .information-banner .banner-right .banner-title{
+        gap: 5px;
+    }
+    .information-banner .banner-right .banner-title h1{
+        font-size: 90px;
+        line-height: 90px;
+    }
+    .information-banner .banner-right .banner-title p{
+        width: 62%;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    
+    .information-banner .banner-right .banner-text{
+        width: 86%;
+        gap: 40px;
+    }
+    .information-banner .banner-right .banner-text .banner-info{
+        gap: 1px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .information-banner .banner-right .banner-text .banner-info span{
+        width: 100%;
+        font-size: 14px;
+        gap: 4px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span strong{
+        font-size: 16px;
+        gap: 6px;
+    }
+    .information-banner .banner-right .banner-text .description{
+        font-size: 10px;
+        gap: 5px;
+        width: 70%;
+        
+    }
+    .information-banner .banner-right .banner-text .description strong{
+        font-size: 16px;
+        gap: 6px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1420px){
+    .information-banner .banner-left{
+        width: 580px;
+    }
+    .information-banner .banner-left img{
+        width: 500px;
+        height: 500px;
+        top: 12%;
+        left: 30%;
+    }
+    .information-banner .banner-right{
+        gap: 60px;
+        padding: 130px 70px 0 0;
+    }
+    .information-banner .banner-right .banner-title{
+        gap: 5px;
+    }
+    .information-banner .banner-right .banner-title h1{
+        font-size: 90px;
+        line-height: 90px;
+    }
+    .information-banner .banner-right .banner-title p{
+        width: 75%;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    
+    .information-banner .banner-right .banner-text{
+        width: 94%;
+        gap: 40px;
+    }
+    .information-banner .banner-right .banner-text .banner-info{
+        gap: 1px;
+        width: 100%;
+    }
+    .information-banner .banner-right .banner-text .banner-info span{
+        width: 100%;
+        font-size: 14px;
+        gap: 5px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span strong{
+        font-size: 16px;
+        gap: 8px;
+    }
+    .information-banner .banner-right .banner-text .description{
+        font-size: 12px;
+        gap: 5px;
+        width: 70%;
+        
+    }
+    .information-banner .banner-right .banner-text .description strong{
+        font-size: 16px;
+        gap: 8px;
+    }
+}
