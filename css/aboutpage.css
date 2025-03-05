@@ -16,7 +16,7 @@ body {
 }
 
 /* Banner Desing */
-.banner{
+.bannerinfo{
     width: 100%;
     height: 400px;
     background-image: url("https://t3.ftcdn.net/jpg/09/52/78/68/360_F_952786811_oAEGJctfVOHBQy4KJE9v8xDcSn7ZoDWX.jpg");
@@ -26,7 +26,7 @@ body {
     cursor: default;
     margin-bottom: 100px;
 }
-.banner .overlay{
+.bannerinfo .overlay{
     width: 100%;
     height: 100%;
     background: rgba(36, 14, 0, 0.516);
@@ -36,14 +36,14 @@ body {
     align-items: center;
     gap: 5px;
 }
-.banner .overlay p{
+.bannerinfo .overlay p{
     text-align: center;
     font-family: Pacifico;
     color: #fffcf3;
     font-size: 100px;
     cursor: default;
 }
-.banner .overlay .text{
+.bannerinfo .overlay .text{
     display: flex;
     align-items: center;
     gap: 10px; 
@@ -53,16 +53,16 @@ body {
     font-size: 20px;  
     font-weight: 700;
 }
-.banner .overlay .text a{
+.bannerinfo .overlay .text a{
     text-decoration: none;
     cursor: pointer;
     color: #fffcf3;
     transition: color ease 0.2s;
 }
-.banner .overlay .text a:hover{
+.bannerinfo .overlay .text a:hover{
     color: #ffb97c;
 }
-.banner .overlay .text i{
+.bannerinfo .overlay .text i{
     font-size: 14px; 
     margin-left: 5px; 
     color: #fffcf3;

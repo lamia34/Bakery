@@ -4,7 +4,7 @@ body {
 }
 
 /* Slider */
-.sliderstyle{
+.sliderstylebranch{
   width: 100%;
   /* padding-top: 100px; */
   background-color: #FFE2B0;
@@ -12,14 +12,14 @@ body {
   height: 60vh;
   
 }
-.sliderstyle .slides{
+.sliderstylebranch .slides{
   object-fit: cover;
   display: inline-block;
   width: 100%;
   height: 60vh;
 
 }
-.sliderstyle .slide-cover{
+.sliderstylebranch .slide-cover{
   position: absolute;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@ body {
   align-items: center;
 }
 
-.slide-cover .text{
+.sliderstylebranch .slide-cover .text{
   display: flex;
   align-items: center;
   gap: 10px; 
@@ -42,28 +42,28 @@ body {
   font-weight: 700;
   line-height: 80px;
 }
-.slide-cover .text a{
+.sliderstylebranch .slide-cover .text a{
   text-decoration: none;
   cursor: pointer;
   color: #fffcf3;
   transition: color ease 0.2s;
 }
 
-.slogan-container {
+.sliderstylebranch .slogan-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.slogan {
+.sliderstylebranch .slogan {
   font-size: 60px;
   color: #fffaed;
   margin-top: 10px;
   font-family: Pacifico;
   line-height: 1.5;
 }
-.slide-cover .text a:hover{
+.sliderstylebranch .slide-cover .text a:hover{
   color: #ffb97c;
 }
 
@@ -78,7 +78,7 @@ body {
   gap: 30px; /* Kartlar arasındakı məsafəni artırdıq */
 }
 
-.card {
+.cardbranch {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,7 +90,7 @@ body {
   position: relative;
 }
 
-.card::before {
+.cardbranch::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -102,16 +102,16 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-.card:hover::before {
+.cardbranch:hover::before {
   opacity: 1;
 }
 
-.card:hover {
+.cardbranch:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
-.card-image {
+.card-imagebr {
   width: 300px;
   height: 220px;
   border-top-left-radius: 20px;
@@ -119,7 +119,7 @@ body {
   overflow: hidden;
 }
 
-.card-image img {
+.card-imagebr img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -130,7 +130,7 @@ body {
   transform: scale(1.1) rotate(-2deg);
 }
 
-.card-text {
+.card-textbr {
   height: 180px;
   width: 300px;
   background: linear-gradient(135deg, #e2a56b, #c97b50);
@@ -142,7 +142,7 @@ body {
   position: relative;
 }
 
-.card-title {
+.card-textbr .card-title {
   font-size: 1.5rem;
   /* margin-bottom: 12px; */
   font-family: "Varela Round", sans-serif;
@@ -150,12 +150,12 @@ body {
   letter-spacing: 1px;
 }
 
-.card-body {
+.card-textbr.card-body {
   font-size: 1.2rem;
   font-family: "Varela Round", sans-serif;
 }
 
-.branch-button {
+.card-textbr .branch-button {
   border: none;
   border-radius: 25px;
   background: linear-gradient(145deg, #9e4a32, #ba5e42);
@@ -170,12 +170,12 @@ body {
               -4px -4px 10px rgba(255, 255, 255, 0.6);
 }
 
-.branch-button a {
+.card-textbr .branch-button a {
   color: #f8e7da;
   text-decoration: none;
 }
 
-.branch-button:hover {
+.card-textbr .branch-button:hover {
   background: linear-gradient(145deg, #8d3e28, #a74e36);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 
               -2px -2px 5px rgba(255, 255, 255, 0.5);
@@ -243,7 +243,7 @@ body {
     height: 35vh;
   }
 
-  .card-container .card-image{
+  .branch-container .card-imagebr{
     width: 280px;
   }
 

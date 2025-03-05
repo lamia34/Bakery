@@ -449,6 +449,406 @@ footer .foot-bottom p{
         padding: 10px 0;
     }
 }
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Banner */
+.bannerprod {
+    width: 100%;
+    height: 60vh;
+    background-image: url("https://static.vecteezy.com/ti/photos-gratuite/p1/45987511-variete-de-pains-sur-en-bois-table-gratuit-photo.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.bannerprod .slogan-container{
+    width: 100%;
+    height: 100%;
+    background: rgba(36, 14, 0, 0.516);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.bannerprod .text{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    color: #fadcc3;
+     font-family: "Varela Round", sans-serif;
+    font-size: 20px;  
+    font-weight: 700;
+}
+.bannerprod .text a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fffcf3;
+    transition: color ease 0.2s;
+}
+
+.bannerprod .slogan-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bannerprod .slogan {
+    font-size: 60px;
+    color: #fffaed;
+    margin-top: 10px;
+    font-family: Pacifico;
+    line-height: 1.5;
+}
+.bannerprod .text :hover{
+    color: #ffb97c;
+}
+
+/* Aboutproduct */
+.aboutproduct {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #fae3c6;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 90%;
+}
+
+.aboutprod {
+    flex: 1;
+    padding-right: 30px;
+    font-family: "Varela Round", sans-serif;
+    color: #8b5e34;
+}
+
+.prodpicture {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prodpicture img {
+    max-width: 80%;
+    border-radius: 20px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.aboutprod p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.7;
+    color: #6b3e26;
+    margin: 15px 0;
+}
+
+.aboutprod i {
+    color: #d4883b;
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutproduct {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .aboutprod {
+        padding-right: 0;
+    }
+
+    .prodpicture img {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .aboutproduct {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .aboutprod p {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Product */
+.prod {
+    padding: 10px 20px;
+    background-color: #9b7c56;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 3-4 sütunlu düzən */
+    gap: 20px;
+    padding: 40px 50px;
+    justify-content: center;
+}
+
+h2 {
+    font-family: "Varela Round", sans-serif;
+    color: #1f1a0f;
+    font-size: 50px;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.cardproduct {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3e1c3;
+    padding: 1em;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+
+.cardproduct:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cardproduct::after {
+    content: "Ətraflı";
+    font-family: "Varela Round", sans-serif;
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    background: #db8a34;
+    color: #fff;
+    height: 2.5em;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.cardproduct:hover::after {
+    bottom: 0;
+    opacity: 1;
+}
+
+.cardproduct .title {
+     font-family: "Varela Round", sans-serif;
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #5e3c23;
+}
+
+.cardproduct .price {
+     font-family: "Varela Round", sans-serif;
+    font-size: 1em;
+    color: #a34a28;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.productphoto {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cardproduct:hover .productphoto {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+}
+
+
+/* Səhifələmə */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagination-container button {
+    background-color: #a34a28;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.pagination-container button:hover {
+    background-color: #d6784f;
+    transform: scale(1.1);
+}
+
+
+#currentPageNumber {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5e3c23;
+    padding: 5px 10px;
+    background: #f4c26b;
+    border-radius: 5px;
+    margin: 0 15px;
+}
+
+#paginationContainer button.active {
+    background: #d2691e;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* Bestseller */
+.bestseller-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fffaf0; 
+}
+
+.bestseller-title {
+    font-size: 32px;
+    color: #d2691e; 
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.bestseller-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bestseller-card {
+    background: #ffefdb;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.bestseller-card:hover {
+    transform: translateY(-5px);
+}
+
+.bestseller-img {
+    width: 100%;
+    height: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.bestseller-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+
+.bestseller-info {
+    padding: 10px 0;
+}
+
+.bestseller-info h3 {
+    font-size: 20px;
+    color: #8b4513; 
+    font-weight: bold;
+}
+
+.bestprice {
+    font-size: 18px;
+    color: #d2691e;
+    margin: 10px 0;
+}
+
+.details-btn {
+    background: #ff8c00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.details-btn:hover {
+    background: #d2691e;
+}
+
+
+@media (max-width: 768px) {
+    .bestseller-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
@@ -991,673 +1391,6 @@ body {
         font-size: 14px;
     }
 }
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-  
-  /* Slider */
-  .sliderstyle{
-    width: 100%;
-    /* padding-top: 100px; */
-    background-color: #FFE2B0;
-    position: relative;
-    height: 60vh;
-    
-  }
-  .sliderstyle .slides{
-    object-fit: cover;
-    display: inline-block;
-    width: 100%;
-    height: 60vh;
-  
-  }
-  .sliderstyle .slide-cover{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(180deg, rgba(36, 14, 0, 0) 0%, #391c0e 100%);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .slide-cover .text{
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-    color: #fadcc3;
-     font-family: "Varela Round", sans-serif;
-    font-size: 20px;  
-    font-weight: 700;
-    line-height: 80px;
-  }
-  .slide-cover .text a{
-    text-decoration: none;
-    cursor: pointer;
-    color: #fffcf3;
-    transition: color ease 0.2s;
-  }
-  
-  .slogan-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .slogan {
-    font-size: 60px;
-    color: #fffaed;
-    margin-top: 10px;
-    font-family: Pacifico;
-    line-height: 1.5;
-  }
-  .slide-cover .text a:hover{
-    color: #ffb97c;
-  }
-  
-  
-  /* Filiallar */
-  .card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 80px 20px;
-    background: linear-gradient(180deg, #fbdbbc, #f8cfa8);
-    gap: 30px; /* Kartlar arasındakı məsafəni artırdıq */
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    overflow: hidden;
-    background: #ffffff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    position: relative;
-  }
-  
-  .card::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .card:hover::before {
-    opacity: 1;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-image {
-    width: 300px;
-    height: 220px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    overflow: hidden;
-  }
-  
-  .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease-in-out;
-  }
-  
-  .card:hover .card-image img {
-    transform: scale(1.1) rotate(-2deg);
-  }
-  
-  .card-text {
-    height: 180px;
-    width: 300px;
-    background: linear-gradient(135deg, #e2a56b, #c97b50);
-    color: #fff;
-    padding: 25px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    text-align: center;
-    position: relative;
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    /* margin-bottom: 12px; */
-    font-family: "Varela Round", sans-serif;
-    color: #fffcf5;
-    letter-spacing: 1px;
-  }
-  
-  .card-body {
-    font-size: 1.2rem;
-    font-family: "Varela Round", sans-serif;
-  }
-  
-  .branch-button {
-    border: none;
-    border-radius: 25px;
-    background: linear-gradient(145deg, #9e4a32, #ba5e42);
-    padding: 10px 25px;
-    margin-top: 15px;
-    cursor: pointer;
-    font-family: 'Varela Round', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15), 
-                -4px -4px 10px rgba(255, 255, 255, 0.6);
-  }
-  
-  .branch-button a {
-    color: #f8e7da;
-    text-decoration: none;
-  }
-  
-  .branch-button:hover {
-    background: linear-gradient(145deg, #8d3e28, #a74e36);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 
-                -2px -2px 5px rgba(255, 255, 255, 0.5);
-    transform: scale(1.05);
-  }
-  
-  
-  
-  
-  @media (max-width: 850px) {
-    .sliderstyle {
-      height: 50vh;
-    }
-  
-    .sliderstyle .slides {
-      height: 50vh;
-    }
-  
-    .slide-cover {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center; 
-      padding: 0 10px; 
-    }
-  
-    .slogan {
-      font-size: 40px;
-      text-align: center;
-      word-wrap: break-word;
-    }
-  
-    .slide-cover .text {
-      font-size: 16px;
-      line-height: 50px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .sliderstyle {
-      height: 40vh;
-    }
-  
-    .sliderstyle .slides {
-      height: 40vh;
-    }
-  
-    .slide-cover {
-      padding: 0 5px; 
-    }
-  
-    .slogan {
-      font-size: 30px;
-    }
-  
-    .slide-cover .text {
-      font-size: 14px;
-      line-height: 40px;
-    }
-  }
-  
-  @media (max-width: 320px) {
-    .sliderstyle {
-      height: 35vh;
-    }
-  
-    .card-container .card-image{
-      width: 280px;
-    }
-  
-    .sliderstyle .slides {
-      height: 35vh;
-    }
-  
-    .slide-cover {
-      padding: 0 5px;
-    }
-  
-    .slogan {
-      font-size: 22px; 
-    }
-  
-    .slide-cover .text {
-      font-size: 12px;
-      line-height: 30px;
-    }
-  }
-  @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* Banner */
-.banner {
-    width: 100%;
-    height: 60vh;
-    background-image: url("https://static.vecteezy.com/ti/photos-gratuite/p1/45987511-variete-de-pains-sur-en-bois-table-gratuit-photo.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.banner .slogan-container{
-    width: 100%;
-    height: 100%;
-    background: rgba(36, 14, 0, 0.516);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.banner .text{
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-    color: #fadcc3;
-     font-family: "Varela Round", sans-serif;
-    font-size: 20px;  
-    font-weight: 700;
-}
-.banner .text a{
-    text-decoration: none;
-    cursor: pointer;
-    color: #fffcf3;
-    transition: color ease 0.2s;
-}
-
-.slogan-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.slogan {
-    font-size: 60px;
-    color: #fffaed;
-    margin-top: 10px;
-    font-family: Pacifico;
-    line-height: 1.5;
-}
-.banner .text :hover{
-    color: #ffb97c;
-}
-
-/* Aboutproduct */
-.aboutproduct {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    background-color: #fae3c6;
-    border-radius: 20px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-    margin: 30px auto;
-    max-width: 90%;
-}
-
-.aboutprod {
-    flex: 1;
-    padding-right: 30px;
-    font-family: "Varela Round", sans-serif;
-    color: #8b5e34;
-}
-
-.prodpicture {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.prodpicture img {
-    max-width: 80%;
-    border-radius: 20px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease-in-out;
-}
-
-.aboutprod p {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.7;
-    color: #6b3e26;
-    margin: 15px 0;
-}
-
-.aboutprod i {
-    color: #d4883b;
-}
-
-@media screen and (max-width: 1000px) {
-    .aboutproduct {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .aboutprod {
-        padding-right: 0;
-    }
-
-    .prodpicture img {
-        max-width: 100%;
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-    .aboutproduct {
-        padding: 15px;
-        max-width: 100%;
-    }
-
-    .aboutprod p {
-        font-size: 18px;
-    }
-}
-
-
-
-
-
-
-
-
-/* Product */
-.prod {
-    padding: 10px 20px;
-    background-color: #9b7c56;
-    max-width: 80%;
-    margin: 0 auto;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 3-4 sütunlu düzən */
-    gap: 20px;
-    padding: 40px 50px;
-    justify-content: center;
-}
-
-h2 {
-    font-family: "Varela Round", sans-serif;
-    color: #1f1a0f;
-    font-size: 50px;
-    margin-bottom: 20px;
-    cursor: default;
-}
-
-.card {
-    position: relative;
-    width: 100%;
-    max-width: 250px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f3e1c3;
-    padding: 1em;
-    border-radius: 15px;
-    overflow: hidden;
-    margin: 0 auto;
-    
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
-}
-
-.card::after {
-    content: "Ətraflı";
-    font-family: "Varela Round", sans-serif;
-    position: absolute;
-    left: 0;
-    bottom: -50px;
-    background: #db8a34;
-    color: #fff;
-    height: 2.5em;
-    width: 100%;
-    text-align: center;
-    font-weight: 600;
-    text-transform: uppercase;
-    opacity: 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-.card:hover::after {
-    bottom: 0;
-    opacity: 1;
-}
-
-.card .title {
-     font-family: "Varela Round", sans-serif;
-    font-size: 1.2em;
-    margin-top: 10px;
-    font-weight: 600;
-    color: #5e3c23;
-}
-
-.card .price {
-     font-family: "Varela Round", sans-serif;
-    font-size: 1em;
-    color: #a34a28;
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-.productphoto {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.card:hover .productphoto {
-    transform: scale(1.05);
-}
-
-@media screen and (max-width: 1024px) {
-    .products {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .products {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 15px;
-        padding: 10px;
-    }
-}
-
-
-/* Səhifələmə */
-.pagination-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.pagination-container button {
-    background-color: #a34a28;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin: 0 5px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.pagination-container button:hover {
-    background-color: #d6784f;
-    transform: scale(1.1);
-}
-
-
-#currentPageNumber {
-    font-size: 18px;
-    font-weight: bold;
-    color: #5e3c23;
-    padding: 5px 10px;
-    background: #f4c26b;
-    border-radius: 5px;
-    margin: 0 15px;
-}
-
-#paginationContainer button.active {
-    background: #d2691e;
-    color: white;
-    font-weight: bold;
-}
-
-
-
-/* Bestseller */
-.bestseller-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #fffaf0; 
-}
-
-.bestseller-title {
-    font-size: 32px;
-    color: #d2691e; 
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.bestseller-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.bestseller-card {
-    background: #ffefdb;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    text-align: center;
-    padding: 15px;
-    transition: transform 0.3s ease;
-}
-
-.bestseller-card:hover {
-    transform: translateY(-5px);
-}
-
-.bestseller-img {
-    width: 100%;
-    height: 200px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; 
-}
-
-.bestseller-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    border-radius: 10px;
-}
-
-
-.bestseller-info {
-    padding: 10px 0;
-}
-
-.bestseller-info h3 {
-    font-size: 20px;
-    color: #8b4513; 
-    font-weight: bold;
-}
-
-.bestprice {
-    font-size: 18px;
-    color: #d2691e;
-    margin: 10px 0;
-}
-
-.details-btn {
-    background: #ff8c00;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.details-btn:hover {
-    background: #d2691e;
-}
-
-
-@media (max-width: 768px) {
-    .bestseller-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
@@ -2153,6 +1886,1421 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* Banner Desing */
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url("https://www.softil.com/wp-content/uploads/2017/07/contact-banner.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    cursor: default;
+    margin-bottom: 120px;
+}
+.banner .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(36, 14, 0, 0.516);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.banner .overlay p{
+    text-align: center;
+    font-family: "Pacifico", serif;
+    color: #fffcf3;
+    font-size: 100px;
+    cursor: default;
+}
+.banner .overlay .text{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    color: #fadcc3;
+    font-family: "Varela Round", sans-serif;
+    font-size: 20px;  
+    font-weight: 700;
+}
+.banner .overlay .text a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fffcf3;
+    transition: color ease 0.2s;
+}
+.banner .overlay .text a:hover{
+    color: #ffb97c;
+}
+.banner .overlay .text i{
+    font-size: 14px; 
+    margin-left: 5px; 
+    color: #fffcf3;
+}
+
+/* Contact Desing */
+.contact{
+    border-radius: 10px;
+    display: flex;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.contact .contact-all{
+    width: 50%;
+    height: auto;
+}
+.contact .contact-infos{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+    gap: 60px;
+}
+.contact .contact-infos .info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact .contact-infos .info .info-title{
+    display: flex;
+    align-items: end;
+    gap: 17px;
+}
+.contact .contact-infos .info .info-title i{
+    font-size: 26px;
+    color: #dc7a25;
+}
+.contact .contact-infos .info .info-title h3{
+    font-family: "Varela Round", sans-serif;
+    font-size: 28px;
+    line-height: 24px;
+    text-transform: capitalize;
+    cursor: default;
+    color: #4a260a;
+}
+.contact .contact-infos .info p{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-style: italic;
+    gap: 6px;
+}
+.contact .contact-infos .social{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 15px;
+}
+.contact .contact-infos .social h3{
+    font-family: "Varela Round", sans-serif;    
+    font-size: 28px;
+    line-height: 24px;
+    text-transform: capitalize;
+    cursor: default;
+    color: #4a260a;
+}
+.contact .contact-infos .social ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+}
+.contact .contact-infos .social ul li a{
+    color: #fc8823;
+    font-size: 34px;
+    transition: all ease-in-out 0.2s;
+}
+.contact .contact-infos .social ul li a:hover{
+    color: rgb(74, 38, 10);
+}
+.contact .contact-forms{
+    background-color: #ffedde;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:40px;
+    gap: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.contact .contact-forms h1{
+    font-family: "Varela Round", sans-serif;
+    font-size: 46px;
+    line-height: 30px;
+    text-align: center;
+    cursor: default;
+}
+.contact .contact-forms h1 span{
+    font-family: "Varela Round", sans-serif;
+    font-size: 30px;  
+    font-weight: 700;
+    color:  #dc7a25;
+}
+.contact .contact-forms form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+.contact .contact-forms form input{
+    height: 46px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact .contact-forms form textarea{
+    resize: vertical;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact .contact-forms form button{
+    border: #eb7e1f;
+    border-radius: 10px;
+    background-color: #eb7e1f;
+    color: #fff;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 700;
+    font-size: 17px;  
+}
+.contact .contact-forms form button:hover{
+    border: #6e391f;
+    background-color: #6e391f;
+    color: #fff;
+}
+
+/* Vacancy Desing */
+.vacancy{
+    margin-top: 120px;
+    padding: 100px 0;
+    background-color: #f0cd90; 
+}
+.vacancy .container{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.vacancy .container h1{
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    color: rgb(74, 38, 10);
+    font-size: 38px;
+    cursor: default;
+}
+.vacancy .container .vacancy-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px; 
+    justify-content: center;
+}
+.vacancy .container .vacancy-cards .card {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.vacancy .container .vacancy-cards .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.vacancy .container .vacancy-cards .card:hover img {
+    transform: scale(1.05);
+}
+.vacancy .container .vacancy-cards .texts {
+    padding: 20px 18px;
+    background-color: #ffedde;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.vacancy .container .vacancy-cards .texts span{
+    font-family: "Varela Round", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.vacancy .container .vacancy-cards .texts .job {
+    color: #dc7a25;
+    font-size: 20px;
+    font-weight: bold;
+}
+.vacancy .container .vacancy-cards .overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.704);
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.875), transparent); */
+    transition: left 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 26px;
+    gap: 14px;
+    color: #fffcf3;
+}
+.vacancy .container .vacancy-cards .overlay h3 {
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+   font-size: 26px;
+}
+.vacancy .container .vacancy-cards .overlay ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.vacancy .container .vacancy-cards .overlay ul li{
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+}
+.vacancy .container .vacancy-cards .overlay ul li strong{
+    font-weight: 800;
+    font-size: 14px;
+}
+.vacancy .container .vacancy-cards .overlay ul li strong i{
+    font-size: 11px;
+    margin-right: 4px;
+}
+.vacancy .container .vacancy-cards .card:hover .overlay {
+    left: 0; 
+}
+.vacancy .container button{
+    border: #ba704a;
+    border-radius: 4px;
+    background-color: #ba704a;
+    color: #fff;
+    width: 116px;
+    height: 38px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 700;
+    font-size: 18px; 
+    margin: auto;
+}
+.vacancy .container  button:hover{
+    border: #6e391f;
+    background-color: #6e391f;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px){  
+    .banner{
+        height: 380px;
+        margin-bottom: 80px;
+    }
+    .banner .overlay{
+        gap: 3px;
+    }
+    .banner .overlay p{
+        font-size: 70px;
+    }
+    .banner .overlay .text{
+        font-size: 21px;  
+    }
+    .banner .overlay .text i{
+        font-size: 10px; 
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact .contact-all{
+        width: 100%;
+        height: auto;
+    }
+    .contact .contact-infos{
+        padding: 50px 35px;
+        gap: 50px;
+    }
+    .contact .contact-infos .info{
+        gap: 10px;
+    }
+    .contact .contact-infos .info .info-title{
+        gap: 14px;
+    }
+    .contact .contact-infos .info .info-title i{
+        font-size: 23px;
+    }
+    .contact .contact-infos .info .info-title h3{
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .contact .contact-infos .info p{
+        font-size: 14px;
+        gap: 6px;
+    }
+    .contact .contact-infos .social{
+        gap: 14px;
+        padding-top: 10px;
+    }
+    .contact .contact-infos .social h3{
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .contact .contact-infos .social ul{
+        gap: 35px;
+    }
+    .contact .contact-infos .social ul li a{
+        font-size: 30px;
+    }
+    .contact .contact-forms{
+        gap: 28px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .contact .contact-forms h1{
+        font-size: 42px;
+        line-height: 26px;
+    }
+    .contact .contact-forms h1 span{
+        font-size: 28px;  
+        font-weight: 700;
+    }
+    .contact .contact-forms form{
+        gap: 24px;
+    }
+    .contact .contact-forms form input{
+        height: 44px;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .contact .contact-forms form textarea{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .contact .contact-forms form button{
+        font-size: 15px;  
+    }
+
+    .vacancy{
+        margin-top: 80px;
+        padding: 60px 0;
+        background-color: #f0cd90; 
+    }
+    .vacancy .container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .vacancy .container h1{
+        font-size: 34px;
+    }
+    .vacancy .container .vacancy-cards{
+        gap:16px; 
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+    .banner{
+        margin-bottom: 80px;
+    }
+    .banner .overlay{
+        gap: 3px;
+    }
+    .banner .overlay p{
+        font-size: 86px;
+    }
+    .banner .overlay .text{
+        font-size: 21px;  
+    }
+    .banner .overlay .text i{
+        font-size: 10px; 
+    }
+
+    
+    .contact{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact .contact-all{
+        width: 100%;
+        height: auto;
+    }
+    .contact .contact-infos{
+        padding: 50px 35px;
+        gap: 50px;
+    }
+    .contact .contact-infos .info{
+        gap: 10px;
+    }
+    .contact .contact-infos .info .info-title{
+        gap: 14px;
+    }
+    .contact .contact-infos .info .info-title i{
+        font-size: 23px;
+    }
+    .contact .contact-infos .info .info-title h3{
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .contact .contact-infos .info p{
+        font-size: 14px;
+        gap: 6px;
+    }
+    .contact .contact-infos .social{
+        gap: 14px;
+        padding-top: 10px;
+    }
+    .contact .contact-infos .social h3{
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .contact .contact-infos .social ul{
+        gap: 35px;
+    }
+    .contact .contact-infos .social ul li a{
+        font-size: 30px;
+    }
+    .contact .contact-forms{
+        gap: 28px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .contact .contact-forms h1{
+        font-size: 42px;
+        line-height: 26px;
+    }
+    .contact .contact-forms h1 span{
+        font-size: 28px;  
+        font-weight: 700;
+    }
+    .contact .contact-forms form{
+        gap: 24px;
+    }
+    .contact .contact-forms form input{
+        height: 44px;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .contact .contact-forms form textarea{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .contact .contact-forms form button{
+        font-size: 15px;  
+    }
+
+    .vacancy{
+        margin-top: 80px;
+        padding: 60px 0;
+        background-color: #f0cd90; 
+    }
+    .vacancy .container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .vacancy .container h1{
+        font-size: 34px;
+    }
+    .vacancy .container .vacancy-cards{
+        gap:16px; 
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px){
+    .banner .overlay p{
+        font-size: 94px;
+    }
+    .banner .overlay .text{
+        font-size: 22px;  
+    }
+    .banner .overlay .text i{
+        font-size: 13px; 
+    }
+
+    .contact .contact-infos .info .info-title i{
+        font-size: 24px;
+    }
+    .contact .contact-infos .info .info-title h3{
+        font-size: 24px;
+        line-height: 22px;
+    }
+    .contact .contact-infos .info p{
+        font-size: 15px;
+    }
+    .contact .contact-infos .social h3{
+        font-size: 24px;
+        line-height: 22px;
+    }
+    .contact .contact-infos .social ul{
+        gap: 34px;
+    }
+    .contact .contact-infos .social ul li a{
+        font-size: 32px;
+    }
+    .contact .contact-forms h1{
+        font-size: 44px;
+        line-height: 28px;
+    }
+    .contact .contact-forms h1 span{
+        font-size: 38px;  
+    }
+    .contact .contact-forms form button{
+        font-size: 16px;  
+    }
+
+    .vacancy{
+        margin-top: 110px;
+        padding: 90px 0;
+    }
+    .vacancy .container h1{
+        font-size: 36px;
+    }
+    .vacancy .container button{
+        width: 114px;
+        height: 38px;
+        font-weight: 700;
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 500px) {
+
+    .contact .social h3{
+        line-height:  10px;
+    }
+
+    .contact .contact-all {
+        width: 100%; 
+    }
+
+    .contact .contact-infos,
+    .contact .contact-forms {
+        padding: 20px; 
+        gap: 20px;
+    }
+
+    .contact .contact-infos .info .info-title {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .contact .contact-infos .info .info-title i,
+    .contact .contact-infos .info .info-title h3 {
+        font-size: 20px; 
+    }
+
+    .contact .contact-infos .info p {
+        font-size: 14px; 
+    }
+
+    .contact .contact-infos .social ul {
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 20px; 
+    }
+
+    .contact .contact-infos .social ul li a {
+        font-size: 28px; 
+    }
+
+    .contact .contact-forms h1 {
+        font-size: 32px; 
+        line-height: 28px; 
+    }
+
+    .contact .contact-forms h1 span {
+        font-size: 28px; 
+    }
+
+    .contact .contact-forms form input,
+    .contact .contact-forms form textarea {
+        font-size: 14px; 
+    }
+} 
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Slider */
+  .sliderstylebranch{
+    width: 100%;
+    /* padding-top: 100px; */
+    background-color: #FFE2B0;
+    position: relative;
+    height: 60vh;
+    
+  }
+  .sliderstylebranch .slides{
+    object-fit: cover;
+    display: inline-block;
+    width: 100%;
+    height: 60vh;
+  
+  }
+  .sliderstylebranch .slide-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(36, 14, 0, 0) 0%, #391c0e 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sliderstylebranch .slide-cover .text{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    color: #fadcc3;
+     font-family: "Varela Round", sans-serif;
+    font-size: 20px;  
+    font-weight: 700;
+    line-height: 80px;
+  }
+  .sliderstylebranch .slide-cover .text a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fffcf3;
+    transition: color ease 0.2s;
+  }
+  
+  .sliderstylebranch .slogan-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .sliderstylebranch .slogan {
+    font-size: 60px;
+    color: #fffaed;
+    margin-top: 10px;
+    font-family: Pacifico;
+    line-height: 1.5;
+  }
+  .sliderstylebranch .slide-cover .text a:hover{
+    color: #ffb97c;
+  }
+  
+  
+  /* Filiallar */
+  .branch-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #fbdbbc, #f8cfa8);
+    gap: 30px; /* Kartlar arasındakı məsafəni artırdıq */
+  }
+  
+  .cardbranch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .cardbranch::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .cardbranch:hover::before {
+    opacity: 1;
+  }
+  
+  .cardbranch:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-imagebr {
+    width: 300px;
+    height: 220px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .card-imagebr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .card:hover .card-image img {
+    transform: scale(1.1) rotate(-2deg);
+  }
+  
+  .card-textbr {
+    height: 180px;
+    width: 300px;
+    background: linear-gradient(135deg, #e2a56b, #c97b50);
+    color: #fff;
+    padding: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .card-textbr .card-title {
+    font-size: 1.5rem;
+    /* margin-bottom: 12px; */
+    font-family: "Varela Round", sans-serif;
+    color: #fffcf5;
+    letter-spacing: 1px;
+  }
+  
+  .card-textbr.card-body {
+    font-size: 1.2rem;
+    font-family: "Varela Round", sans-serif;
+  }
+  
+  .card-textbr .branch-button {
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #9e4a32, #ba5e42);
+    padding: 10px 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15), 
+                -4px -4px 10px rgba(255, 255, 255, 0.6);
+  }
+  
+  .card-textbr .branch-button a {
+    color: #f8e7da;
+    text-decoration: none;
+  }
+  
+  .card-textbr .branch-button:hover {
+    background: linear-gradient(145deg, #8d3e28, #a74e36);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 
+                -2px -2px 5px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+  }
+  
+  
+  
+  
+  @media (max-width: 850px) {
+    .sliderstyle {
+      height: 50vh;
+    }
+  
+    .sliderstyle .slides {
+      height: 50vh;
+    }
+  
+    .slide-cover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; 
+      padding: 0 10px; 
+    }
+  
+    .slogan {
+      font-size: 40px;
+      text-align: center;
+      word-wrap: break-word;
+    }
+  
+    .slide-cover .text {
+      font-size: 16px;
+      line-height: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sliderstyle {
+      height: 40vh;
+    }
+  
+    .sliderstyle .slides {
+      height: 40vh;
+    }
+  
+    .slide-cover {
+      padding: 0 5px; 
+    }
+  
+    .slogan {
+      font-size: 30px;
+    }
+  
+    .slide-cover .text {
+      font-size: 14px;
+      line-height: 40px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .sliderstyle {
+      height: 35vh;
+    }
+  
+    .branch-container .card-imagebr{
+      width: 280px;
+    }
+  
+    .sliderstyle .slides {
+      height: 35vh;
+    }
+  
+    .slide-cover {
+      padding: 0 5px;
+    }
+  
+    .slogan {
+      font-size: 22px; 
+    }
+  
+    .slide-cover .text {
+      font-size: 12px;
+      line-height: 30px;
+    }
+  }
+  section{
+    padding-top: 100px;
+    display: flex;
+    gap: 100px;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.information-banner{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.information-banner .banner-left{
+    width: 640px;
+    height: 100%;
+    background-color: #cf6f3e;
+    position: relative;
+}
+.information-banner .banner-left img{
+    position: absolute;
+    object-fit: cover;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    top: 12%;
+    left: 42%;
+}
+/* .information-banner .banner-left h1{
+    position: absolute;
+    font-family: "Sigmar", sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    width: 100%;
+    top: 60px; 
+    left: 14%; 
+    letter-spacing: 20px; 
+    color: #4d1e0730;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.408); 
+} */
+.information-banner .banner-right{
+    width: 100%;
+    height: 100%;
+    background-color: #fff7f0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 60px;
+    padding: 130px 90px 0 0;
+}
+.information-banner .banner-right .banner-title{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-family: "Pacifico", serif;
+    cursor: default;
+    gap: 5px;
+}
+.information-banner .banner-right .banner-title h1{
+    font-size: 100px;
+    line-height: 100px;
+    color: #dc7a25;
+}
+.information-banner .banner-right .banner-title p{
+    width: 80%;
+    font-size: 14px;
+    line-height: 14px;
+    color: #4a260a;
+    text-align: end;
+}
+
+.information-banner .banner-right .banner-text{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 80%;
+    gap: 40px;
+}
+.information-banner .banner-right .banner-text .banner-info{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10%;
+    width: 100%;
+}
+.information-banner .banner-right .banner-text .banner-info span{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    font-size: 16px;
+    font-family: "Varela Round", sans-serif;
+    gap: 5px;
+}
+.information-banner .banner-right .banner-text .banner-info span strong{
+    color: #dc7a25;
+    font-size: 22px;
+    gap: 8px;
+    cursor: default;
+}
+.information-banner .banner-right .banner-text .description{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 14px;
+    font-family: "Varela Round", sans-serif;
+    gap: 5px;
+    text-align: end;
+    width: 86%;
+    
+}
+.information-banner .banner-right .banner-text .description strong{
+    color: #dc7a25;
+    font-size: 22px;
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    cursor: default;
+}
+
+
+@media screen and (max-width: 350px){
+    .information-banner{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 0;
+    }
+    .information-banner .banner-left{
+        display: none;
+    }
+    .information-banner .banner-left img{
+        display: none;
+    }
+    .information-banner .banner-right{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 60px;
+        justify-content: start;
+        align-items: start;
+        padding: 40px 10% 40px 10%;
+    }
+    .information-banner .banner-right .banner-title{
+        gap: 5px;
+        width: 100%;
+        align-items: center;
+    }
+    .information-banner .banner-right .banner-title h1{
+        font-size: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .information-banner .banner-right .banner-title p{
+        width: 100%;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+    }
+    
+    .information-banner .banner-right .banner-text{
+        width: 100%;
+        gap: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .information-banner .banner-right .banner-text .banner-info{
+        gap: 1px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span{
+        text-align: center;
+        font-size: 10px;
+        gap: 4px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span strong{
+        font-size: 12px;
+        gap: 6px;
+    }
+    .information-banner .banner-right .banner-text .description{
+        font-size: 10px;
+        gap: 5px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .information-banner .banner-right .banner-text .description strong{
+        font-size: 12px;
+        gap: 6px;     
+    }
+}
+@media (min-width: 350px) and (max-width: 600px){
+    .information-banner{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 0;
+    }
+    .information-banner .banner-left{
+        width: 100%;
+        height: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .information-banner .banner-left img{
+        position: static;
+        width: 320px;
+        height: 320px;
+    }
+    .information-banner .banner-right{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 60px;
+        justify-content: start;
+        align-items: start;
+        padding: 40px 10% 40px 10%;
+    }
+    .information-banner .banner-right .banner-title{
+        gap: 5px;
+        width: 100%;
+        align-items: center;
+    }
+    .information-banner .banner-right .banner-title h1{
+        font-size: 82px;
+        line-height: 82px;
+        text-align: center;
+    }
+    .information-banner .banner-right .banner-title p{
+        width: 100%;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+    }
+    
+    .information-banner .banner-right .banner-text{
+        width: 100%;
+        gap: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .information-banner .banner-right .banner-text .banner-info{
+        gap: 1px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span{
+        text-align: center;
+        font-size: 12px;
+        gap: 4px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span strong{
+        font-size: 14px;
+        gap: 6px;
+    }
+    .information-banner .banner-right .banner-text .description{
+        font-size: 10px;
+        gap: 5px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .information-banner .banner-right .banner-text .description strong{
+        font-size: 14px;
+        gap: 6px;     
+    }
+}
+@media (min-width: 600px) and (max-width: 900px){
+    .information-banner{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 0;
+    }
+    .information-banner .banner-left{
+        width: 100%;
+        height: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .information-banner .banner-left img{
+        position: static;
+        width: 360px;
+        height: 360px;
+        top: 20%;
+        left: 40%;
+    }
+    .information-banner .banner-right{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 60px;
+        justify-content: start;
+        align-items: start;
+        padding: 60px 10% 80px 10%;
+    }
+    .information-banner .banner-right .banner-title{
+        gap: 5px;
+        width: 100%;
+        align-items: center;
+
+    }
+    .information-banner .banner-right .banner-title h1{
+        font-size: 90px;
+        line-height: 90px;
+        text-align: center;
+    }
+    .information-banner .banner-right .banner-title p{
+        width: 62%;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+    }
+    
+    .information-banner .banner-right .banner-text{
+        width: 100%;
+        gap: 40px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .information-banner .banner-right .banner-text .banner-info{
+        gap: 1px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span{
+        text-align: center;
+        font-size: 14px;
+        gap: 4px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span strong{
+        font-size: 16px;
+        gap: 6px;
+    }
+    .information-banner .banner-right .banner-text .description{
+        font-size: 10px;
+        gap: 5px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .information-banner .banner-right .banner-text .description strong{
+        font-size: 16px;
+        gap: 6px;     
+    }
+}
+@media (min-width: 900px) and (max-width: 1200px){
+    .information-banner .banner-left{
+        width: 480px;
+    }
+    .information-banner .banner-left img{
+        width: 420px;
+        height: 420px;
+        top: 20%;
+        left: 40%;
+    }
+    .information-banner .banner-right{
+        gap: 60px;
+        padding: 130px 50px 0 0;
+    }
+    .information-banner .banner-right .banner-title{
+        gap: 5px;
+    }
+    .information-banner .banner-right .banner-title h1{
+        font-size: 90px;
+        line-height: 90px;
+    }
+    .information-banner .banner-right .banner-title p{
+        width: 62%;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    
+    .information-banner .banner-right .banner-text{
+        width: 86%;
+        gap: 40px;
+    }
+    .information-banner .banner-right .banner-text .banner-info{
+        gap: 1px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .information-banner .banner-right .banner-text .banner-info span{
+        width: 100%;
+        font-size: 14px;
+        gap: 4px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span strong{
+        font-size: 16px;
+        gap: 6px;
+    }
+    .information-banner .banner-right .banner-text .description{
+        font-size: 10px;
+        gap: 5px;
+        width: 70%;
+        
+    }
+    .information-banner .banner-right .banner-text .description strong{
+        font-size: 16px;
+        gap: 6px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1420px){
+    .information-banner .banner-left{
+        width: 580px;
+    }
+    .information-banner .banner-left img{
+        width: 500px;
+        height: 500px;
+        top: 12%;
+        left: 30%;
+    }
+    .information-banner .banner-right{
+        gap: 60px;
+        padding: 130px 70px 0 0;
+    }
+    .information-banner .banner-right .banner-title{
+        gap: 5px;
+    }
+    .information-banner .banner-right .banner-title h1{
+        font-size: 90px;
+        line-height: 90px;
+    }
+    .information-banner .banner-right .banner-title p{
+        width: 75%;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    
+    .information-banner .banner-right .banner-text{
+        width: 94%;
+        gap: 40px;
+    }
+    .information-banner .banner-right .banner-text .banner-info{
+        gap: 1px;
+        width: 100%;
+    }
+    .information-banner .banner-right .banner-text .banner-info span{
+        width: 100%;
+        font-size: 14px;
+        gap: 5px;
+    }
+    .information-banner .banner-right .banner-text .banner-info span strong{
+        font-size: 16px;
+        gap: 8px;
+    }
+    .information-banner .banner-right .banner-text .description{
+        font-size: 12px;
+        gap: 5px;
+        width: 70%;
+        
+    }
+    .information-banner .banner-right .banner-text .description strong{
+        font-size: 16px;
+        gap: 8px;
+    }
+}   
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -2168,7 +3316,7 @@ body {
 }
 
 /* Banner Desing */
-.banner{
+.bannerinfo{
     width: 100%;
     height: 400px;
     background-image: url("https://t3.ftcdn.net/jpg/09/52/78/68/360_F_952786811_oAEGJctfVOHBQy4KJE9v8xDcSn7ZoDWX.jpg");
@@ -2178,7 +3326,7 @@ body {
     cursor: default;
     margin-bottom: 100px;
 }
-.banner .overlay{
+.bannerinfo .overlay{
     width: 100%;
     height: 100%;
     background: rgba(36, 14, 0, 0.516);
@@ -2188,14 +3336,14 @@ body {
     align-items: center;
     gap: 5px;
 }
-.banner .overlay p{
+.bannerinfo .overlay p{
     text-align: center;
     font-family: Pacifico;
     color: #fffcf3;
     font-size: 100px;
     cursor: default;
 }
-.banner .overlay .text{
+.bannerinfo .overlay .text{
     display: flex;
     align-items: center;
     gap: 10px; 
@@ -2205,16 +3353,16 @@ body {
     font-size: 20px;  
     font-weight: 700;
 }
-.banner .overlay .text a{
+.bannerinfo .overlay .text a{
     text-decoration: none;
     cursor: pointer;
     color: #fffcf3;
     transition: color ease 0.2s;
 }
-.banner .overlay .text a:hover{
+.bannerinfo .overlay .text a:hover{
     color: #ffb97c;
 }
-.banner .overlay .text i{
+.bannerinfo .overlay .text i{
     font-size: 14px; 
     margin-left: 5px; 
     color: #fffcf3;
@@ -3086,658 +4234,6 @@ body {
     .advantages .statistic .stat p{
         font-size: 14px;
         font-weight: 700;
-    }
-}
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
-
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.container{
-    width: 80%;
-    margin: auto;
-}
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-
-/* Banner Desing */
-.banner{
-    width: 100%;
-    height: 400px;
-    background-image: url("https://www.softil.com/wp-content/uploads/2017/07/contact-banner.jpg");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    cursor: default;
-    margin-bottom: 120px;
-}
-.banner .overlay{
-    width: 100%;
-    height: 100%;
-    background: rgba(36, 14, 0, 0.516);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-.banner .overlay p{
-    text-align: center;
-    font-family: "Pacifico", serif;
-    color: #fffcf3;
-    font-size: 100px;
-    cursor: default;
-}
-.banner .overlay .text{
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-    color: #fadcc3;
-    font-family: "Varela Round", sans-serif;
-    font-size: 20px;  
-    font-weight: 700;
-}
-.banner .overlay .text a{
-    text-decoration: none;
-    cursor: pointer;
-    color: #fffcf3;
-    transition: color ease 0.2s;
-}
-.banner .overlay .text a:hover{
-    color: #ffb97c;
-}
-.banner .overlay .text i{
-    font-size: 14px; 
-    margin-left: 5px; 
-    color: #fffcf3;
-}
-
-/* Contact Desing */
-.contact{
-    border-radius: 10px;
-    display: flex;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
-.contact .contact-all{
-    width: 50%;
-    height: auto;
-}
-.contact .contact-infos{
-    display: flex;
-    flex-direction: column;
-    padding: 60px 40px;
-    gap: 60px;
-}
-.contact .contact-infos .info{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.contact .contact-infos .info .info-title{
-    display: flex;
-    align-items: end;
-    gap: 17px;
-}
-.contact .contact-infos .info .info-title i{
-    font-size: 26px;
-    color: #dc7a25;
-}
-.contact .contact-infos .info .info-title h3{
-    font-family: "Varela Round", sans-serif;
-    font-size: 28px;
-    line-height: 24px;
-    text-transform: capitalize;
-    cursor: default;
-    color: #4a260a;
-}
-.contact .contact-infos .info p{
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-style: italic;
-    gap: 6px;
-}
-.contact .contact-infos .social{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding-top: 15px;
-}
-.contact .contact-infos .social h3{
-    font-family: "Varela Round", sans-serif;    
-    font-size: 28px;
-    line-height: 24px;
-    text-transform: capitalize;
-    cursor: default;
-    color: #4a260a;
-}
-.contact .contact-infos .social ul{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    list-style-type: none;
-}
-.contact .contact-infos .social ul li a{
-    color: #fc8823;
-    font-size: 34px;
-    transition: all ease-in-out 0.2s;
-}
-.contact .contact-infos .social ul li a:hover{
-    color: rgb(74, 38, 10);
-}
-.contact .contact-forms{
-    background-color: #ffedde;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:40px;
-    gap: 40px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.contact .contact-forms h1{
-    font-family: "Varela Round", sans-serif;
-    font-size: 46px;
-    line-height: 30px;
-    text-align: center;
-    cursor: default;
-}
-.contact .contact-forms h1 span{
-    font-family: "Varela Round", sans-serif;
-    font-size: 30px;  
-    font-weight: 700;
-    color:  #dc7a25;
-}
-.contact .contact-forms form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 30px;
-}
-.contact .contact-forms form input{
-    height: 46px;
-    padding: 10px;
-    font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.contact .contact-forms form textarea{
-    resize: vertical;
-    padding: 10px;
-    font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.contact .contact-forms form button{
-    border: #eb7e1f;
-    border-radius: 10px;
-    background-color: #eb7e1f;
-    color: #fff;
-    padding: 10px;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    font-family: "Varela Round", sans-serif;
-    font-weight: 700;
-    font-size: 17px;  
-}
-.contact .contact-forms form button:hover{
-    border: #6e391f;
-    background-color: #6e391f;
-    color: #fff;
-}
-
-/* Vacancy Desing */
-.vacancy{
-    margin-top: 120px;
-    padding: 100px 0;
-    background-color: #f0cd90; 
-}
-.vacancy .container{
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-.vacancy .container h1{
-    text-align: center;
-    font-family: "Varela Round", sans-serif;
-    color: rgb(74, 38, 10);
-    font-size: 38px;
-    cursor: default;
-}
-.vacancy .container .vacancy-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-    gap: 20px; 
-    justify-content: center;
-}
-.vacancy .container .vacancy-cards .card {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-.vacancy .container .vacancy-cards .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-}
-.vacancy .container .vacancy-cards .card:hover img {
-    transform: scale(1.05);
-}
-.vacancy .container .vacancy-cards .texts {
-    padding: 20px 18px;
-    background-color: #ffedde;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.vacancy .container .vacancy-cards .texts span{
-    font-family: "Varela Round", sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-}
-.vacancy .container .vacancy-cards .texts .job {
-    color: #dc7a25;
-    font-size: 20px;
-    font-weight: bold;
-}
-.vacancy .container .vacancy-cards .overlay {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.704);
-    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.875), transparent); */
-    transition: left 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    padding: 30px 26px;
-    gap: 14px;
-    color: #fffcf3;
-}
-.vacancy .container .vacancy-cards .overlay h3 {
-    font-family: "Varela Round", sans-serif;
-    font-weight: bold;
-   font-size: 26px;
-}
-.vacancy .container .vacancy-cards .overlay ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-.vacancy .container .vacancy-cards .overlay ul li{
-    font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 13px;
-}
-.vacancy .container .vacancy-cards .overlay ul li strong{
-    font-weight: 800;
-    font-size: 14px;
-}
-.vacancy .container .vacancy-cards .overlay ul li strong i{
-    font-size: 11px;
-    margin-right: 4px;
-}
-.vacancy .container .vacancy-cards .card:hover .overlay {
-    left: 0; 
-}
-.vacancy .container button{
-    border: #ba704a;
-    border-radius: 4px;
-    background-color: #ba704a;
-    color: #fff;
-    width: 116px;
-    height: 38px;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    font-family: "Varela Round", sans-serif;
-    font-weight: 700;
-    font-size: 18px; 
-    margin: auto;
-}
-.vacancy .container  button:hover{
-    border: #6e391f;
-    background-color: #6e391f;
-}
-
-/* Responsive */
-@media screen and (max-width: 600px){  
-    .banner{
-        height: 380px;
-        margin-bottom: 80px;
-    }
-    .banner .overlay{
-        gap: 3px;
-    }
-    .banner .overlay p{
-        font-size: 70px;
-    }
-    .banner .overlay .text{
-        font-size: 21px;  
-    }
-    .banner .overlay .text i{
-        font-size: 10px; 
-    }
-
-    .contact{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .contact .contact-all{
-        width: 100%;
-        height: auto;
-    }
-    .contact .contact-infos{
-        padding: 50px 35px;
-        gap: 50px;
-    }
-    .contact .contact-infos .info{
-        gap: 10px;
-    }
-    .contact .contact-infos .info .info-title{
-        gap: 14px;
-    }
-    .contact .contact-infos .info .info-title i{
-        font-size: 23px;
-    }
-    .contact .contact-infos .info .info-title h3{
-        font-size: 22px;
-        line-height: 20px;
-    }
-    .contact .contact-infos .info p{
-        font-size: 14px;
-        gap: 6px;
-    }
-    .contact .contact-infos .social{
-        gap: 14px;
-        padding-top: 10px;
-    }
-    .contact .contact-infos .social h3{
-        font-size: 22px;
-        line-height: 20px;
-    }
-    .contact .contact-infos .social ul{
-        gap: 35px;
-    }
-    .contact .contact-infos .social ul li a{
-        font-size: 30px;
-    }
-    .contact .contact-forms{
-        gap: 28px;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-    }
-    .contact .contact-forms h1{
-        font-size: 42px;
-        line-height: 26px;
-    }
-    .contact .contact-forms h1 span{
-        font-size: 28px;  
-        font-weight: 700;
-    }
-    .contact .contact-forms form{
-        gap: 24px;
-    }
-    .contact .contact-forms form input{
-        height: 44px;
-        padding: 10px;
-        font-size: 14px;
-    }
-    .contact .contact-forms form textarea{
-        padding: 10px;
-        font-size: 14px;
-    }
-    .contact .contact-forms form button{
-        font-size: 15px;  
-    }
-
-    .vacancy{
-        margin-top: 80px;
-        padding: 60px 0;
-        background-color: #f0cd90; 
-    }
-    .vacancy .container{
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
-    .vacancy .container h1{
-        font-size: 34px;
-    }
-    .vacancy .container .vacancy-cards{
-        gap:16px; 
-    }
-}
-
-@media (min-width: 600px) and (max-width: 900px){
-    .banner{
-        margin-bottom: 80px;
-    }
-    .banner .overlay{
-        gap: 3px;
-    }
-    .banner .overlay p{
-        font-size: 86px;
-    }
-    .banner .overlay .text{
-        font-size: 21px;  
-    }
-    .banner .overlay .text i{
-        font-size: 10px; 
-    }
-
-    
-    .contact{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .contact .contact-all{
-        width: 100%;
-        height: auto;
-    }
-    .contact .contact-infos{
-        padding: 50px 35px;
-        gap: 50px;
-    }
-    .contact .contact-infos .info{
-        gap: 10px;
-    }
-    .contact .contact-infos .info .info-title{
-        gap: 14px;
-    }
-    .contact .contact-infos .info .info-title i{
-        font-size: 23px;
-    }
-    .contact .contact-infos .info .info-title h3{
-        font-size: 22px;
-        line-height: 20px;
-    }
-    .contact .contact-infos .info p{
-        font-size: 14px;
-        gap: 6px;
-    }
-    .contact .contact-infos .social{
-        gap: 14px;
-        padding-top: 10px;
-    }
-    .contact .contact-infos .social h3{
-        font-size: 22px;
-        line-height: 20px;
-    }
-    .contact .contact-infos .social ul{
-        gap: 35px;
-    }
-    .contact .contact-infos .social ul li a{
-        font-size: 30px;
-    }
-    .contact .contact-forms{
-        gap: 28px;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-    }
-    .contact .contact-forms h1{
-        font-size: 42px;
-        line-height: 26px;
-    }
-    .contact .contact-forms h1 span{
-        font-size: 28px;  
-        font-weight: 700;
-    }
-    .contact .contact-forms form{
-        gap: 24px;
-    }
-    .contact .contact-forms form input{
-        height: 44px;
-        padding: 10px;
-        font-size: 14px;
-    }
-    .contact .contact-forms form textarea{
-        padding: 10px;
-        font-size: 14px;
-    }
-    .contact .contact-forms form button{
-        font-size: 15px;  
-    }
-
-    .vacancy{
-        margin-top: 80px;
-        padding: 60px 0;
-        background-color: #f0cd90; 
-    }
-    .vacancy .container{
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
-    .vacancy .container h1{
-        font-size: 34px;
-    }
-    .vacancy .container .vacancy-cards{
-        gap:16px; 
-    }
-}
-
-@media (min-width: 900px) and (max-width: 1200px){
-    .banner .overlay p{
-        font-size: 94px;
-    }
-    .banner .overlay .text{
-        font-size: 22px;  
-    }
-    .banner .overlay .text i{
-        font-size: 13px; 
-    }
-
-    .contact .contact-infos .info .info-title i{
-        font-size: 24px;
-    }
-    .contact .contact-infos .info .info-title h3{
-        font-size: 24px;
-        line-height: 22px;
-    }
-    .contact .contact-infos .info p{
-        font-size: 15px;
-    }
-    .contact .contact-infos .social h3{
-        font-size: 24px;
-        line-height: 22px;
-    }
-    .contact .contact-infos .social ul{
-        gap: 34px;
-    }
-    .contact .contact-infos .social ul li a{
-        font-size: 32px;
-    }
-    .contact .contact-forms h1{
-        font-size: 44px;
-        line-height: 28px;
-    }
-    .contact .contact-forms h1 span{
-        font-size: 38px;  
-    }
-    .contact .contact-forms form button{
-        font-size: 16px;  
-    }
-
-    .vacancy{
-        margin-top: 110px;
-        padding: 90px 0;
-    }
-    .vacancy .container h1{
-        font-size: 36px;
-    }
-    .vacancy .container button{
-        width: 114px;
-        height: 38px;
-        font-weight: 700;
-        font-size: 16px; 
-    }
-}
-
-@media (max-width: 500px) {
-
-    .contact .social h3{
-        line-height:  10px;
-    }
-
-    .contact .contact-all {
-        width: 100%; 
-    }
-
-    .contact .contact-infos,
-    .contact .contact-forms {
-        padding: 20px; 
-        gap: 20px;
-    }
-
-    .contact .contact-infos .info .info-title {
-        flex-direction: column; 
-        align-items: flex-start;
-    }
-
-    .contact .contact-infos .info .info-title i,
-    .contact .contact-infos .info .info-title h3 {
-        font-size: 20px; 
-    }
-
-    .contact .contact-infos .info p {
-        font-size: 14px; 
-    }
-
-    .contact .contact-infos .social ul {
-        flex-wrap: wrap; 
-        justify-content: center; 
-        gap: 20px; 
-    }
-
-    .contact .contact-infos .social ul li a {
-        font-size: 28px; 
-    }
-
-    .contact .contact-forms h1 {
-        font-size: 32px; 
-        line-height: 28px; 
-    }
-
-    .contact .contact-forms h1 span {
-        font-size: 28px; 
-    }
-
-    .contact .contact-forms form input,
-    .contact .contact-forms form textarea {
-        font-size: 14px; 
     }
 }
 

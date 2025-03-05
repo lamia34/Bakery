@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const products = document.querySelectorAll(".card");
+    const products = document.querySelectorAll(".cardproduct");
     const productsPerPage = 9; 
     let currentPage = 1; 
 

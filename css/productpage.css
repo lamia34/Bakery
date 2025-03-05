@@ -7,7 +7,7 @@ body {
 }
 
 /* Banner */
-.banner {
+.bannerprod {
     width: 100%;
     height: 60vh;
     background-image: url("https://static.vecteezy.com/ti/photos-gratuite/p1/45987511-variete-de-pains-sur-en-bois-table-gratuit-photo.jpeg");
@@ -19,7 +19,7 @@ body {
     align-items: center;
 
 }
-.banner .slogan-container{
+.bannerprod .slogan-container{
     width: 100%;
     height: 100%;
     background: rgba(36, 14, 0, 0.516);
@@ -30,7 +30,7 @@ body {
     gap: 5px;
 }
 
-.banner .text{
+.bannerprod .text{
     display: flex;
     align-items: center;
     gap: 10px; 
@@ -39,28 +39,28 @@ body {
     font-size: 20px;  
     font-weight: 700;
 }
-.banner .text a{
+.bannerprod .text a{
     text-decoration: none;
     cursor: pointer;
     color: #fffcf3;
     transition: color ease 0.2s;
 }
 
-.slogan-container {
+.bannerprod .slogan-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.slogan {
+.bannerprod .slogan {
     font-size: 60px;
     color: #fffaed;
     margin-top: 10px;
     font-family: Pacifico;
     line-height: 1.5;
 }
-.banner .text :hover{
+.bannerprod .text :hover{
     color: #ffb97c;
 }
 
@@ -172,7 +172,7 @@ h2 {
     cursor: default;
 }
 
-.card {
+.cardproduct {
     position: relative;
     width: 100%;
     max-width: 250px;
@@ -191,12 +191,12 @@ h2 {
     
 }
 
-.card:hover {
+.cardproduct:hover {
     transform: translateY(-10px);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-.card::after {
+.cardproduct::after {
     content: "Ətraflı";
     font-family: "Varela Round", sans-serif;
     position: absolute;
@@ -215,12 +215,12 @@ h2 {
     transition: all 0.3s ease;
 }
 
-.card:hover::after {
+.cardproduct:hover::after {
     bottom: 0;
     opacity: 1;
 }
 
-.card .title {
+.cardproduct .title {
      font-family: "Varela Round", sans-serif;
     font-size: 1.2em;
     margin-top: 10px;
@@ -228,7 +228,7 @@ h2 {
     color: #5e3c23;
 }
 
-.card .price {
+.cardproduct .price {
      font-family: "Varela Round", sans-serif;
     font-size: 1em;
     color: #a34a28;
@@ -243,7 +243,7 @@ h2 {
     transition: transform 0.3s ease;
 }
 
-.card:hover .productphoto {
+.cardproduct:hover .productphoto {
     transform: scale(1.05);
 }
 
