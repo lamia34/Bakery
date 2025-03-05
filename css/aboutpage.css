@@ -10,7 +10,10 @@
     width: 80%;
     margin: auto;
 }
-
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 /* Banner Desing */
 .banner{
@@ -374,15 +377,24 @@
 
 
 /* Partner Desing */
-.shops {
-    height: 24vh;
-    display: flex;
-    gap: 10px;
-    animation: scroll-right 25s linear infinite;
-    padding: 10px;
-    margin: 120px 0px 80px;
+.shops-container {
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
 }
-.shops a{
+
+.shops {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: max-content;
+    animation: scroll-shops 25s linear infinite;
+    padding: 30px;
+}
+
+.shops a {
     width: 140px;
     height: 140px;
     border-radius: 50%;
@@ -392,17 +404,24 @@
     flex-shrink: 0; 
     padding: 5px;
 }
-.shops img{
+
+.shops img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     border: 1px solid #e9ecef;
 }
-.shops-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+
+@keyframes scroll-shops {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
+
+
 .shops:hover{
     animation-play-state: paused; 
 }
@@ -411,15 +430,7 @@
     height: 140px;
     border-radius: 50%;
     transform: scale(1.05); 
-    box-shadow: 0 4px 8px #7A4225;
-}
-@keyframes scroll-right {
-    from {
-        transform: translateX(5%); 
-    }
-    to {
-        transform: translateX(-170%); 
-    }
+    box-shadow: 0 2px 8px #7A4225;
 }
 
 
@@ -632,8 +643,8 @@
         height: 100px;
     }
     .shops a:hover {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
     }
 }
 

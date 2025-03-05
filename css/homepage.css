@@ -11,6 +11,10 @@
     width: 80%;
     margin: auto;
 }
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 /* BG COLORS #f0cd90 #FFE2B0 TEXT COLORS #7A4225*/
 
@@ -165,7 +169,7 @@
 /* Branch Desing*/
 .branch{
      background-color: #f0cd90; 
-     padding-bottom: 120px;
+     padding: 100px 0;
 }
 .branch .container .branch-title{
     text-align: center;
@@ -224,12 +228,13 @@
     margin: 0;
     font-family: "Varela Round", sans-serif;
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     cursor: default;
-    line-height: 32px;
+    line-height: 25px;
 }
 .branch .container .branch-box .boxes .card__title span{
-    font-size: 34px;
+    font-size: 25px;
+    font-weight: bold;
     color: #ba704a;
 }
 .branch .container .branch-box .boxes .card__description {
@@ -265,6 +270,7 @@
 
 /* Partner Desing */
 .shops-container {
+    margin: 20px 0;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -277,6 +283,7 @@
     gap: 20px;
     width: max-content;
     animation: scroll-shops 25s linear infinite;
+    padding: 30px;
 }
 
 .shops a {
@@ -311,8 +318,8 @@
     animation-play-state: paused; 
 }
 .shops a:hover {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     transform: scale(1.05); 
     box-shadow: 0 2px 8px #7A4225;
@@ -336,15 +343,16 @@
     align-items: center;
     width: 22%;
     gap: 20px;
+    text-align: center;
 }
 .advantages .container .adv-card i{
     font-size: 100px;
-    color: #411d15;
+    color: #ba704a;
 }
 .advantages .container .adv-card p{
     font-family: "Varela Round", sans-serif;
     font-size: 16px;
-    color: #411d15;
+    color: #1f0b00;
     cursor: default;
 }
 
@@ -418,8 +426,8 @@
         height: 100px;
     }
     .shops a:hover {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
     }
 
     .advantages{

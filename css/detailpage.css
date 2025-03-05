@@ -6,6 +6,10 @@
     margin: 0;
     padding: 0;
 }
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 .information-banner{
     display: flex;
@@ -55,14 +59,17 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    font-family: "Pacifico", serif;
+    font-family: "Varela Round", sans-serif;
+    font-style: italic;
     cursor: default;
+    font-weight: bold;
     gap: 5px;
 }
 .information-banner .banner-right .banner-title h1{
     font-size: 100px;
     line-height: 100px;
     color: #dc7a25;
+    font-style: normal;
 }
 .information-banner .banner-right .banner-title p{
     width: 80%;

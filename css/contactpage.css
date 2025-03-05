@@ -11,6 +11,10 @@
     width: 80%;
     margin: auto;
 }
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 
 /* Banner Desing */
@@ -595,7 +599,7 @@
 @media (max-width: 500px) {
 
     .contact .social h3{
-        line: height 10px;
+        line-height:  10px;
     }
 
     .contact .contact-all {

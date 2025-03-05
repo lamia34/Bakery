@@ -3,73 +3,264 @@ body {
   overflow-x: hidden;
 }
 
-.slides{
-    display: inline-block;
-    width: 100%;
-    height: 70vh;
-}
+/* Slider */
 .sliderstyle{
-    width: 100%;
-    background-color: #FFE2B0;
+  width: 100%;
+  /* padding-top: 100px; */
+  background-color: #FFE2B0;
+  position: relative;
+  height: 60vh;
+  
+}
+.sliderstyle .slides{
+  object-fit: cover;
+  display: inline-block;
+  width: 100%;
+  height: 60vh;
+
+}
+.sliderstyle .slide-cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(36, 14, 0, 0) 0%, #391c0e 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-cover .text{
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  color: #fadcc3;
+   font-family: "Varela Round", sans-serif;
+  font-size: 20px;  
+  font-weight: 700;
+  line-height: 80px;
+}
+.slide-cover .text a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #fffcf3;
+  transition: color ease 0.2s;
+}
+
+.slogan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.slogan {
+  font-size: 60px;
+  color: #fffaed;
+  margin-top: 10px;
+  font-family: Pacifico;
+  line-height: 1.5;
+}
+.slide-cover .text a:hover{
+  color: #ffb97c;
 }
 
 
-.card-container{
-    display:flex;
-    justify-content:space-around;
-    flex-wrap:wrap;
-    padding:100px 20px;
-    background-color: #fbdbbc;
-  }
+/* Filiallar */
+.branch-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #fbdbbc, #f8cfa8);
+  gap: 30px; /* Kartlar arasındakı məsafəni artırdıq */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 300px;
+  height: 220px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+.card-text {
+  height: 180px;
+  width: 300px;
+  background: linear-gradient(135deg, #e2a56b, #c97b50);
+  color: #fff;
+  padding: 25px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  /* margin-bottom: 12px; */
+  font-family: "Varela Round", sans-serif;
+  color: #fffcf5;
+  letter-spacing: 1px;
+}
+
+.card-body {
+  font-size: 1.2rem;
+  font-family: "Varela Round", sans-serif;
+}
+
+.branch-button {
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #9e4a32, #ba5e42);
+  padding: 10px 25px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15), 
+              -4px -4px 10px rgba(255, 255, 255, 0.6);
+}
+
+.branch-button a {
+  color: #f8e7da;
+  text-decoration: none;
+}
+
+.branch-button:hover {
+  background: linear-gradient(145deg, #8d3e28, #a74e36);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 
+              -2px -2px 5px rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
 
 
-.card{
-    display:flex;
-    flex-direction:column;
-    width:400px;
-    margin-bottom:60px;
+
+
+@media (max-width: 850px) {
+  .sliderstyle {
+    height: 50vh;
   }
-  .card>div{
-    box-shadow:0 15px 20px 0 rgba(0,0,0,0.5);
+
+  .sliderstyle .slides {
+    height: 50vh;
   }
-  .card-image{
-    width:400px;
-    height:250px;
+
+  .slide-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    padding: 0 10px; 
   }
-  .card-image>img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:bottom;
+
+  .slogan {
+    font-size: 40px;
+    text-align: center;
+    word-wrap: break-word;
   }
-  .card-text{
-    margin:-30px auto;
-    margin-bottom:-50px;
-    height:200px;
-    width:300px;
-    background-color:#e2a56b;
-    color:#fff;
-    padding:20px;
+
+  .slide-cover .text {
+    font-size: 16px;
+    line-height: 50px;
   }
-  .card-meal-type{
-    font-style:italic;
+}
+
+@media (max-width: 480px) {
+  .sliderstyle {
+    height: 40vh;
   }
-  .card-title{
-    font-size:2.2rem;
-    margin-bottom:20px;
-    margin-top:5px;
+
+  .sliderstyle .slides {
+    height: 40vh;
   }
-  .card-body{
-    font-size:1.25rem;
+
+  .slide-cover {
+    padding: 0 5px; 
   }
-  .card-tel{
-    width:100px;
-    height:100px;
-    background-color:#f6c07f;
-    color:#fff;
-    margin-left:auto;
-    font-size:3rem;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+
+  .slogan {
+    font-size: 30px;
   }
+
+  .slide-cover .text {
+    font-size: 14px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .sliderstyle {
+    height: 35vh;
+  }
+
+  .card-container .card-image{
+    width: 280px;
+  }
+
+  .sliderstyle .slides {
+    height: 35vh;
+  }
+
+  .slide-cover {
+    padding: 0 5px;
+  }
+
+  .slogan {
+    font-size: 22px; 
+  }
+
+  .slide-cover .text {
+    font-size: 12px;
+    line-height: 30px;
+  }
+}

@@ -11,6 +11,10 @@
     width: 80%;
     margin: auto;
 }
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 
 

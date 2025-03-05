@@ -19,6 +19,16 @@ body {
     align-items: center;
 
 }
+.banner .slogan-container{
+    width: 100%;
+    height: 100%;
+    background: rgba(36, 14, 0, 0.516);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
 
 .banner .text{
     display: flex;
@@ -49,6 +59,9 @@ body {
     margin-top: 10px;
     font-family: Pacifico;
     line-height: 1.5;
+}
+.banner .text :hover{
+    color: #ffb97c;
 }
 
 /* Aboutproduct */
