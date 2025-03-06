@@ -445,8 +445,8 @@ body {
     .banner .overlay{
         gap: 3px;
     }
-    .banner .overlay p{
-        font-size: 56px;
+    .bannerinfo .overlay p{
+        font-size: 66px;
     }
     
     .banner .overlay .text{

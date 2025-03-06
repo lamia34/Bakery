@@ -42,6 +42,7 @@ body {
     display: flex;
     flex-direction: column;
     padding:150px 15% 0;
+    text-align: center;
 }
 .sliderstyle .slide-cover .cover-title{
     display: flex;
@@ -50,27 +51,30 @@ body {
     margin-bottom: 50px;
 }
 .sliderstyle .slide-cover .cover-title h1{
-    font-family: Pacifico;
+    font-family: Varela;
     color: #fff;
     line-height: 100px;
     font-size: 120px;
     cursor: default;
+    text-align: center;
 }
 .sliderstyle .slide-cover .cover-title p{
     color: #ffffff99;
-    font-family: "Caveat", serif;
+    font-family: Varela;
     font-size: 64px; 
     margin-left: 100px; 
+    text-align: center;
     font-weight: 900;
 }
 .sliderstyle .slide-cover .cover-description{
     margin: 0 0 24px 15px;
     color: #e9ecef;
     font-style: italic;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     width: 94%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
 }
 .sliderstyle .slide-cover a{
     border: #eb7e1f;
@@ -88,7 +92,7 @@ body {
     font-weight: 700;
     font-size: 17px;  
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 30rem;
 }
 .sliderstyle .slide-cover a:hover{
     border: #6e391f;

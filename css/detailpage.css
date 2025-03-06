@@ -127,6 +127,10 @@ body {
     cursor: default;
 }
 
+.information-banner .banner-info .filiall a{
+    color: #dc7a25;
+    text-decoration: none;
+}
 
 @media screen and (max-width: 350px){
     .information-banner{
