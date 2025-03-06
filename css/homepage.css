@@ -41,6 +41,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding:150px 15% 0;
     text-align: center;
 }
@@ -92,7 +93,6 @@ body {
     font-weight: 700;
     font-size: 17px;  
     text-decoration: none;
-    margin-left: 30rem;
 }
 .sliderstyle .slide-cover a:hover{
     border: #6e391f;
